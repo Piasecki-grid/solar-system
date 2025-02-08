@@ -1,0 +1,29 @@
+name: Checking activity types
+on:
+  push:
+    branches:
+      - "main"
+    
+  pull_request:
+    types:
+      - opened
+      - closed
+    branches:
+      - "releases/**"
+    path:
+      - "**.sh"
+  workflow_dispatch:
+  
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: actions/checkout@v4
+      - name: context runnings
+        run: echo ${{ github.repository_owner }}
+  second_job:
+    if: github.repository_owner == 'Piasecki-grid'
+    steps:
+      - name: Hello chief 
+        run: echo 'You are sigma'
