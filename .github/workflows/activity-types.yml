@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: context runnings
         run: echo ${{ github.repository_owner }}
   second_job:
