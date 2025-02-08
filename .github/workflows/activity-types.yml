@@ -23,6 +23,7 @@ jobs:
       - name: context runnings
         run: echo ${{ github.repository_owner }}
   second_job:
+    runs-on: ubuntu-latest
     if: github.repository_owner == 'Piasecki-grid'
     steps:
       - name: Hello chief 
