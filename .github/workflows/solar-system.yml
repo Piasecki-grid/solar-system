@@ -58,7 +58,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_versions }}
-          cache: 'npm'
+          cache: 'node_modules'
 
       - name: Install dependencies
         run: npm install
