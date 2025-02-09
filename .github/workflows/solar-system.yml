@@ -58,10 +58,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_versions }}
-          cache: 'node_modules'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Coverage
         run: npm run coverage
