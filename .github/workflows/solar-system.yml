@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.operating_system }} 
     strategy:
       matrix:
-        node_version: [18, 19, 20]
+        node_version: [18]
         operating_system: [ubuntu-latest, macos-latest]
         exclude:
           - node_version: 18
@@ -40,4 +40,23 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: my-artifacts-${{ strategy.job-index }}
+          path: test-results.xml
+  test-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Install npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_versions }}
+      - name: Install dependencies
+        run: npm install
+
+      - name: Unit tests
+        run: npm run coverage
+      - name: Archiving test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-test-coverage-${{ strategy.job-index }}
           path: test-results.xml
