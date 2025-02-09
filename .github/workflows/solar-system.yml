@@ -39,7 +39,7 @@ jobs:
       - name: Archiving test report
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifacts-${{ strategy.job-index }}
+          name: my-unit-tests-${{ strategy.job-index }}
           path: test-results.xml
   test-coverage:
     runs-on: ubuntu-latest
@@ -53,11 +53,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Unit tests
+      - name: Coverage
         run: npm run coverage
         continue-on-error: true
       - name: Archiving test report
         uses: actions/upload-artifact@v4
         with:
           name: my-test-coverage-${{ strategy.job-index }}
-          path: test-results.xml
+          path: coverage/
