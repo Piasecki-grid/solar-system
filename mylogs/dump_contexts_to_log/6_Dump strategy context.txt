@@ -1,0 +1,43 @@
+2025-02-08T10:31:22.2527762Z ##[debug]Evaluating: toJson(strategy)
+2025-02-08T10:31:22.2528358Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2528846Z ##[debug]..Evaluating strategy:
+2025-02-08T10:31:22.2529329Z ##[debug]..=> Object
+2025-02-08T10:31:22.2530084Z ##[debug]=> '{
+2025-02-08T10:31:22.2530744Z ##[debug]  "fail-fast": true,
+2025-02-08T10:31:22.2531230Z ##[debug]  "job-index": 0,
+2025-02-08T10:31:22.2531681Z ##[debug]  "job-total": 1,
+2025-02-08T10:31:22.2532131Z ##[debug]  "max-parallel": 1
+2025-02-08T10:31:22.2532574Z ##[debug]}'
+2025-02-08T10:31:22.2532990Z ##[debug]Result: '{
+2025-02-08T10:31:22.2533397Z ##[debug]  "fail-fast": true,
+2025-02-08T10:31:22.2533857Z ##[debug]  "job-index": 0,
+2025-02-08T10:31:22.2534299Z ##[debug]  "job-total": 1,
+2025-02-08T10:31:22.2534741Z ##[debug]  "max-parallel": 1
+2025-02-08T10:31:22.2535174Z ##[debug]}'
+2025-02-08T10:31:22.2535834Z ##[debug]Evaluating condition for step: 'Dump strategy context'
+2025-02-08T10:31:22.2537187Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2537853Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2538521Z ##[debug]=> true
+2025-02-08T10:31:22.2539125Z ##[debug]Result: true
+2025-02-08T10:31:22.2539868Z ##[debug]Starting: Dump strategy context
+2025-02-08T10:31:22.2549805Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2551094Z ##[debug]Loading env
+2025-02-08T10:31:22.2557207Z ##[group]Run echo "$STRATEGY_CONTEXT"
+2025-02-08T10:31:22.2557752Z [36;1mecho "$STRATEGY_CONTEXT"[0m
+2025-02-08T10:31:22.2583160Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2583639Z env:
+2025-02-08T10:31:22.2584273Z   STRATEGY_CONTEXT: {
+  "fail-fast": true,
+  "job-index": 0,
+  "job-total": 1,
+  "max-parallel": 1
+}
+2025-02-08T10:31:22.2585050Z ##[endgroup]
+2025-02-08T10:31:22.2612861Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/87920a3f-4660-41fa-afa3-4fa1aeb62fc1.sh
+2025-02-08T10:31:22.2631750Z {
+2025-02-08T10:31:22.2632373Z   "fail-fast": true,
+2025-02-08T10:31:22.2632932Z   "job-index": 0,
+2025-02-08T10:31:22.2633765Z   "job-total": 1,
+2025-02-08T10:31:22.2634422Z   "max-parallel": 1
+2025-02-08T10:31:22.2634968Z }
+2025-02-08T10:31:22.2637889Z ##[debug]Finishing: Dump strategy context

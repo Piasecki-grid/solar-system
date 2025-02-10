@@ -1,0 +1,59 @@
+2025-02-08T10:31:22.2397299Z ##[debug]Evaluating: toJson(runner)
+2025-02-08T10:31:22.2397951Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2398514Z ##[debug]..Evaluating runner:
+2025-02-08T10:31:22.2399092Z ##[debug]..=> Object
+2025-02-08T10:31:22.2400232Z ##[debug]=> '{
+2025-02-08T10:31:22.2400878Z ##[debug]  "debug": "1",
+2025-02-08T10:31:22.2401368Z ##[debug]  "os": "Linux",
+2025-02-08T10:31:22.2401861Z ##[debug]  "arch": "X64",
+2025-02-08T10:31:22.2402406Z ##[debug]  "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2403002Z ##[debug]  "environment": "github-hosted",
+2025-02-08T10:31:22.2403613Z ##[debug]  "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2404288Z ##[debug]  "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2404988Z ##[debug]  "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2405626Z ##[debug]}'
+2025-02-08T10:31:22.2406046Z ##[debug]Result: '{
+2025-02-08T10:31:22.2406544Z ##[debug]  "debug": "1",
+2025-02-08T10:31:22.2406984Z ##[debug]  "os": "Linux",
+2025-02-08T10:31:22.2407500Z ##[debug]  "arch": "X64",
+2025-02-08T10:31:22.2407972Z ##[debug]  "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2408489Z ##[debug]  "environment": "github-hosted",
+2025-02-08T10:31:22.2409151Z ##[debug]  "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2409715Z ##[debug]  "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2410303Z ##[debug]  "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2411066Z ##[debug]}'
+2025-02-08T10:31:22.2411725Z ##[debug]Evaluating condition for step: 'Dump runner context'
+2025-02-08T10:31:22.2413076Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2413734Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2414458Z ##[debug]=> true
+2025-02-08T10:31:22.2415304Z ##[debug]Result: true
+2025-02-08T10:31:22.2416057Z ##[debug]Starting: Dump runner context
+2025-02-08T10:31:22.2426228Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2427378Z ##[debug]Loading env
+2025-02-08T10:31:22.2433775Z ##[group]Run echo "$RUNNER_CONTEXT"
+2025-02-08T10:31:22.2434297Z [36;1mecho "$RUNNER_CONTEXT"[0m
+2025-02-08T10:31:22.2459631Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2460100Z env:
+2025-02-08T10:31:22.2461687Z   RUNNER_CONTEXT: {
+  "debug": "1",
+  "os": "Linux",
+  "arch": "X64",
+  "name": "GitHub Actions 11",
+  "environment": "github-hosted",
+  "tool_cache": "/opt/hostedtoolcache",
+  "temp": "/home/runner/work/_temp",
+  "workspace": "/home/runner/work/solar-system"
+}
+2025-02-08T10:31:22.2463180Z ##[endgroup]
+2025-02-08T10:31:22.2491505Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/63f89a03-e04d-49dc-9c6b-ce6004391cfe.sh
+2025-02-08T10:31:22.2510250Z {
+2025-02-08T10:31:22.2511011Z   "debug": "1",
+2025-02-08T10:31:22.2511476Z   "os": "Linux",
+2025-02-08T10:31:22.2512285Z   "arch": "X64",
+2025-02-08T10:31:22.2512964Z   "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2513752Z   "environment": "github-hosted",
+2025-02-08T10:31:22.2514284Z   "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2514816Z   "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2515352Z   "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2515881Z }
+2025-02-08T10:31:22.2518714Z ##[debug]Finishing: Dump runner context

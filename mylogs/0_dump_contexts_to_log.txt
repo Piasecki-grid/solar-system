@@ -1,0 +1,1107 @@
+2025-02-08T10:31:16.5022986Z Requested labels: ubuntu-latest
+2025-02-08T10:31:16.5023360Z Job defined at: Piasecki-grid/solar-system/.github/workflows/context-workflow.yml@refs/heads/main
+2025-02-08T10:31:16.5023474Z Waiting for a runner to pick up this job...
+2025-02-08T10:31:17.1336095Z Job is waiting for a hosted runner to come online.
+2025-02-08T10:31:20.4750540Z Job is about to start running on the hosted runner: GitHub Actions 11 (hosted)
+2025-02-08T10:31:21.9494546Z ##[debug]Starting: dump_contexts_to_log
+2025-02-08T10:31:21.9515404Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2025-02-08T10:31:21.9616225Z ##[debug]Starting: Set up job
+2025-02-08T10:31:21.9617373Z Current runner version: '2.322.0'
+2025-02-08T10:31:21.9638995Z ##[group]Operating System
+2025-02-08T10:31:21.9639723Z Ubuntu
+2025-02-08T10:31:21.9640207Z 24.04.1
+2025-02-08T10:31:21.9641153Z LTS
+2025-02-08T10:31:21.9641669Z ##[endgroup]
+2025-02-08T10:31:21.9642151Z ##[group]Runner Image
+2025-02-08T10:31:21.9642853Z Image: ubuntu-24.04
+2025-02-08T10:31:21.9643388Z Version: 20250202.1.0
+2025-02-08T10:31:21.9644460Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250202.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-08T10:31:21.9645889Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.1
+2025-02-08T10:31:21.9646762Z ##[endgroup]
+2025-02-08T10:31:21.9647353Z ##[group]Runner Image Provisioner
+2025-02-08T10:31:21.9648008Z 2.0.422.1
+2025-02-08T10:31:21.9648740Z ##[endgroup]
+2025-02-08T10:31:21.9651180Z ##[group]GITHUB_TOKEN Permissions
+2025-02-08T10:31:21.9653292Z Actions: write
+2025-02-08T10:31:21.9653893Z Attestations: write
+2025-02-08T10:31:21.9654409Z Checks: write
+2025-02-08T10:31:21.9654993Z Contents: write
+2025-02-08T10:31:21.9655526Z Deployments: write
+2025-02-08T10:31:21.9656066Z Discussions: write
+2025-02-08T10:31:21.9656664Z Issues: write
+2025-02-08T10:31:21.9657183Z Metadata: read
+2025-02-08T10:31:21.9657666Z Packages: write
+2025-02-08T10:31:21.9658276Z Pages: write
+2025-02-08T10:31:21.9658800Z PullRequests: write
+2025-02-08T10:31:21.9659415Z RepositoryProjects: write
+2025-02-08T10:31:21.9660016Z SecurityEvents: write
+2025-02-08T10:31:21.9660743Z Statuses: write
+2025-02-08T10:31:21.9661446Z ##[endgroup]
+2025-02-08T10:31:21.9663479Z Secret source: Actions
+2025-02-08T10:31:21.9664369Z ##[debug]Primary repository: Piasecki-grid/solar-system
+2025-02-08T10:31:21.9665221Z Prepare workflow directory
+2025-02-08T10:31:21.9727173Z ##[debug]Creating pipeline directory: '/home/runner/work/solar-system'
+2025-02-08T10:31:21.9730754Z ##[debug]Creating workspace directory: '/home/runner/work/solar-system/solar-system'
+2025-02-08T10:31:21.9732450Z ##[debug]Update context data
+2025-02-08T10:31:21.9736064Z ##[debug]Evaluating job-level environment variables
+2025-02-08T10:31:21.9949782Z ##[debug]Evaluating job container
+2025-02-08T10:31:21.9953079Z ##[debug]Evaluating job service containers
+2025-02-08T10:31:21.9955993Z ##[debug]Evaluating job defaults
+2025-02-08T10:31:21.9980358Z Prepare all required actions
+2025-02-08T10:31:22.0069561Z ##[debug]Set step '__run' display name to: 'Dump GitHub context'
+2025-02-08T10:31:22.0073161Z ##[debug]Set step '__run_2' display name to: 'Dump job context'
+2025-02-08T10:31:22.0075239Z ##[debug]Set step '__run_3' display name to: 'Dump steps context'
+2025-02-08T10:31:22.0077227Z ##[debug]Set step '__run_4' display name to: 'Dump runner context'
+2025-02-08T10:31:22.0079185Z ##[debug]Set step '__run_5' display name to: 'Dump strategy context'
+2025-02-08T10:31:22.0080113Z Complete job name: dump_contexts_to_log
+2025-02-08T10:31:22.0109227Z ##[debug]Collect running processes for tracking orphan processes.
+2025-02-08T10:31:22.0468727Z ##[debug]Finishing: Set up job
+2025-02-08T10:31:22.0675536Z ##[debug]Evaluating: toJson(github)
+2025-02-08T10:31:22.0681134Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.0687124Z ##[debug]..Evaluating github:
+2025-02-08T10:31:22.0699084Z ##[debug]..=> Object
+2025-02-08T10:31:22.0736823Z ##[debug]=> '{
+2025-02-08T10:31:22.0737524Z ##[debug]  "token": "***",
+2025-02-08T10:31:22.0738036Z ##[debug]  "job": "dump_contexts_to_log",
+2025-02-08T10:31:22.0738606Z ##[debug]  "ref": "refs/heads/main",
+2025-02-08T10:31:22.0739215Z ##[debug]  "sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0739894Z ##[debug]  "repository": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0740806Z ##[debug]  "repository_owner": "Piasecki-grid",
+2025-02-08T10:31:22.0741446Z ##[debug]  "repository_owner_id": "192516429",
+2025-02-08T10:31:22.0742473Z ##[debug]  "repositoryUrl": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0743193Z ##[debug]  "run_id": "13214808380",
+2025-02-08T10:31:22.0743725Z ##[debug]  "run_number": "7",
+2025-02-08T10:31:22.0744213Z ##[debug]  "retention_days": "90",
+2025-02-08T10:31:22.0744719Z ##[debug]  "run_attempt": "1",
+2025-02-08T10:31:22.0745224Z ##[debug]  "artifact_cache_size_limit": "10",
+2025-02-08T10:31:22.0745798Z ##[debug]  "repository_visibility": "public",
+2025-02-08T10:31:22.0746413Z ##[debug]  "repo-self-hosted-runners-disabled": false,
+2025-02-08T10:31:22.0747052Z ##[debug]  "enterprise-managed-business-id": "",
+2025-02-08T10:31:22.0747627Z ##[debug]  "repository_id": "928423468",
+2025-02-08T10:31:22.0748148Z ##[debug]  "actor_id": "192516429",
+2025-02-08T10:31:22.0748662Z ##[debug]  "actor": "Piasecki-grid",
+2025-02-08T10:31:22.0749214Z ##[debug]  "triggering_actor": "Piasecki-grid",
+2025-02-08T10:31:22.0749774Z ##[debug]  "workflow": "Context testing",
+2025-02-08T10:31:22.0750299Z ##[debug]  "head_ref": "",
+2025-02-08T10:31:22.0750987Z ##[debug]  "base_ref": "",
+2025-02-08T10:31:22.0751454Z ##[debug]  "event_name": "push",
+2025-02-08T10:31:22.0751932Z ##[debug]  "event": {
+2025-02-08T10:31:22.0752453Z ##[debug]    "after": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0753071Z ##[debug]    "base_ref": null,
+2025-02-08T10:31:22.0753633Z ##[debug]    "before": "b11db1cf779a89d861db17ad0f89bd37f7b19389",
+2025-02-08T10:31:22.0754254Z ##[debug]    "commits": [
+2025-02-08T10:31:22.0754695Z ##[debug]      {
+2025-02-08T10:31:22.0755103Z ##[debug]        "author": {
+2025-02-08T10:31:22.0755629Z ##[debug]          "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0756228Z ##[debug]          "name": "Piasecki-grid",
+2025-02-08T10:31:22.0756793Z ##[debug]          "username": "Piasecki-grid"
+2025-02-08T10:31:22.0757324Z ##[debug]        },
+2025-02-08T10:31:22.0757749Z ##[debug]        "committer": {
+2025-02-08T10:31:22.0758286Z ##[debug]          "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0758907Z ##[debug]          "name": "Piasecki-grid",
+2025-02-08T10:31:22.0759472Z ##[debug]          "username": "Piasecki-grid"
+2025-02-08T10:31:22.0760064Z ##[debug]        },
+2025-02-08T10:31:22.0760620Z ##[debug]        "distinct": true,
+2025-02-08T10:31:22.0761257Z ##[debug]        "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0761907Z ##[debug]        "message": "checking logging",
+2025-02-08T10:31:22.0762516Z ##[debug]        "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.0763198Z ##[debug]        "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.0764215Z ##[debug]        "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.0765117Z ##[debug]      }
+2025-02-08T10:31:22.0765526Z ##[debug]    ],
+2025-02-08T10:31:22.0766267Z ##[debug]    "compare": "https://github.com/Piasecki-grid/solar-system/compare/b11db1cf779a...b55d5471c61c",
+2025-02-08T10:31:22.0767133Z ##[debug]    "created": false,
+2025-02-08T10:31:22.0767618Z ##[debug]    "deleted": false,
+2025-02-08T10:31:22.0768093Z ##[debug]    "forced": true,
+2025-02-08T10:31:22.0768725Z ##[debug]    "head_commit": {
+2025-02-08T10:31:22.0769219Z ##[debug]      "author": {
+2025-02-08T10:31:22.0769730Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0770330Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0770997Z ##[debug]        "username": "Piasecki-grid"
+2025-02-08T10:31:22.0771530Z ##[debug]      },
+2025-02-08T10:31:22.0771951Z ##[debug]      "committer": {
+2025-02-08T10:31:22.0772475Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0773072Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0773629Z ##[debug]        "username": "Piasecki-grid"
+2025-02-08T10:31:22.0774157Z ##[debug]      },
+2025-02-08T10:31:22.0774585Z ##[debug]      "distinct": true,
+2025-02-08T10:31:22.0775361Z ##[debug]      "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0775994Z ##[debug]      "message": "checking logging",
+2025-02-08T10:31:22.0776586Z ##[debug]      "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.0777261Z ##[debug]      "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.0778250Z ##[debug]      "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.0779141Z ##[debug]    },
+2025-02-08T10:31:22.0779552Z ##[debug]    "pusher": {
+2025-02-08T10:31:22.0780057Z ##[debug]      "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0780896Z ##[debug]      "name": "Piasecki-grid"
+2025-02-08T10:31:22.0781422Z ##[debug]    },
+2025-02-08T10:31:22.0781849Z ##[debug]    "ref": "refs/heads/main",
+2025-02-08T10:31:22.0782373Z ##[debug]    "repository": {
+2025-02-08T10:31:22.0782857Z ##[debug]      "allow_forking": true,
+2025-02-08T10:31:22.0783711Z ##[debug]      "archive_url": "https://api.github.com/repos/Piasecki-grid/solar-system/{archive_format}{/ref}",
+2025-02-08T10:31:22.0784596Z ##[debug]      "archived": false,
+2025-02-08T10:31:22.0785404Z ##[debug]      "assignees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/assignees{/user}",
+2025-02-08T10:31:22.0786511Z ##[debug]      "blobs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/blobs{/sha}",
+2025-02-08T10:31:22.0787621Z ##[debug]      "branches_url": "https://api.github.com/repos/Piasecki-grid/solar-system/branches{/branch}",
+2025-02-08T10:31:22.0788615Z ##[debug]      "clone_url": "https://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0789713Z ##[debug]      "collaborators_url": "https://api.github.com/repos/Piasecki-grid/solar-system/collaborators{/collaborator}",
+2025-02-08T10:31:22.0791096Z ##[debug]      "comments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/comments{/number}",
+2025-02-08T10:31:22.0792239Z ##[debug]      "commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/commits{/sha}",
+2025-02-08T10:31:22.0793374Z ##[debug]      "compare_url": "https://api.github.com/repos/Piasecki-grid/solar-system/compare/{base}...{head}",
+2025-02-08T10:31:22.0794550Z ##[debug]      "contents_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contents/{+path}",
+2025-02-08T10:31:22.0795685Z ##[debug]      "contributors_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contributors",
+2025-02-08T10:31:22.0796536Z ##[debug]      "created_at": 1738857930,
+2025-02-08T10:31:22.0797065Z ##[debug]      "default_branch": "main",
+2025-02-08T10:31:22.0797892Z ##[debug]      "deployments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/deployments",
+2025-02-08T10:31:22.0798732Z ##[debug]      "description": null,
+2025-02-08T10:31:22.0799244Z ##[debug]      "disabled": false,
+2025-02-08T10:31:22.0800004Z ##[debug]      "downloads_url": "https://api.github.com/repos/Piasecki-grid/solar-system/downloads",
+2025-02-08T10:31:22.0801147Z ##[debug]      "events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/events",
+2025-02-08T10:31:22.0801908Z ##[debug]      "fork": true,
+2025-02-08T10:31:22.0802378Z ##[debug]      "forks": 0,
+2025-02-08T10:31:22.0803081Z ##[debug]      "forks_count": 0,
+2025-02-08T10:31:22.0803789Z ##[debug]      "forks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/forks",
+2025-02-08T10:31:22.0804604Z ##[debug]      "full_name": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0805499Z ##[debug]      "git_commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/commits{/sha}",
+2025-02-08T10:31:22.0806626Z ##[debug]      "git_refs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/refs{/sha}",
+2025-02-08T10:31:22.0807699Z ##[debug]      "git_tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/tags{/sha}",
+2025-02-08T10:31:22.0808801Z ##[debug]      "git_url": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0809775Z ##[debug]      "has_discussions": false,
+2025-02-08T10:31:22.0810315Z ##[debug]      "has_downloads": true,
+2025-02-08T10:31:22.0810946Z ##[debug]      "has_issues": false,
+2025-02-08T10:31:22.0811466Z ##[debug]      "has_pages": false,
+2025-02-08T10:31:22.0811979Z ##[debug]      "has_projects": true,
+2025-02-08T10:31:22.0812494Z ##[debug]      "has_wiki": true,
+2025-02-08T10:31:22.0812986Z ##[debug]      "homepage": null,
+2025-02-08T10:31:22.0813683Z ##[debug]      "hooks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/hooks",
+2025-02-08T10:31:22.0814595Z ##[debug]      "html_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0815261Z ##[debug]      "id": 928423468,
+2025-02-08T10:31:22.0815754Z ##[debug]      "is_template": false,
+2025-02-08T10:31:22.0816630Z ##[debug]      "issue_comment_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/comments{/number}",
+2025-02-08T10:31:22.0817878Z ##[debug]      "issue_events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/events{/number}",
+2025-02-08T10:31:22.0819031Z ##[debug]      "issues_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues{/number}",
+2025-02-08T10:31:22.0820082Z ##[debug]      "keys_url": "https://api.github.com/repos/Piasecki-grid/solar-system/keys{/key_id}",
+2025-02-08T10:31:22.0821366Z ##[debug]      "labels_url": "https://api.github.com/repos/Piasecki-grid/solar-system/labels{/name}",
+2025-02-08T10:31:22.0822343Z ##[debug]      "language": "JavaScript",
+2025-02-08T10:31:22.0823141Z ##[debug]      "languages_url": "https://api.github.com/repos/Piasecki-grid/solar-system/languages",
+2025-02-08T10:31:22.0823940Z ##[debug]      "license": null,
+2025-02-08T10:31:22.0824430Z ##[debug]      "master_branch": "main",
+2025-02-08T10:31:22.0825313Z ##[debug]      "merges_url": "https://api.github.com/repos/Piasecki-grid/solar-system/merges",
+2025-02-08T10:31:22.0826406Z ##[debug]      "milestones_url": "https://api.github.com/repos/Piasecki-grid/solar-system/milestones{/number}",
+2025-02-08T10:31:22.0827289Z ##[debug]      "mirror_url": null,
+2025-02-08T10:31:22.0827800Z ##[debug]      "name": "solar-system",
+2025-02-08T10:31:22.0828333Z ##[debug]      "node_id": "R_kgDON1aeLA",
+2025-02-08T10:31:22.0829346Z ##[debug]      "notifications_url": "https://api.github.com/repos/Piasecki-grid/solar-system/notifications{?since,all,participating}",
+2025-02-08T10:31:22.0830366Z ##[debug]      "open_issues": 0,
+2025-02-08T10:31:22.0831005Z ##[debug]      "open_issues_count": 0,
+2025-02-08T10:31:22.0831514Z ##[debug]      "owner": {
+2025-02-08T10:31:22.0832158Z ##[debug]        "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.0832939Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0833730Z ##[debug]        "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.0834668Z ##[debug]        "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.0835652Z ##[debug]        "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.0836783Z ##[debug]        "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.0837531Z ##[debug]        "gravatar_id": "",
+2025-02-08T10:31:22.0838123Z ##[debug]        "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.0838738Z ##[debug]        "id": 192516429,
+2025-02-08T10:31:22.0839234Z ##[debug]        "login": "Piasecki-grid",
+2025-02-08T10:31:22.0839783Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0840332Z ##[debug]        "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.0841164Z ##[debug]        "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.0842159Z ##[debug]        "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.0843102Z ##[debug]        "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.0843914Z ##[debug]        "site_admin": false,
+2025-02-08T10:31:22.0844674Z ##[debug]        "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.0845702Z ##[debug]        "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.0846481Z ##[debug]        "type": "User",
+2025-02-08T10:31:22.0847065Z ##[debug]        "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.0847710Z ##[debug]        "user_view_type": "public"
+2025-02-08T10:31:22.0848228Z ##[debug]      },
+2025-02-08T10:31:22.0848648Z ##[debug]      "private": false,
+2025-02-08T10:31:22.0849401Z ##[debug]      "pulls_url": "https://api.github.com/repos/Piasecki-grid/solar-system/pulls{/number}",
+2025-02-08T10:31:22.0850211Z ##[debug]      "pushed_at": 1739010673,
+2025-02-08T10:31:22.0851163Z ##[debug]      "releases_url": "https://api.github.com/repos/Piasecki-grid/solar-system/releases{/id}",
+2025-02-08T10:31:22.0851978Z ##[debug]      "size": 1733,
+2025-02-08T10:31:22.0852570Z ##[debug]      "ssh_url": "git@github.com:Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0853229Z ##[debug]      "stargazers": 0,
+2025-02-08T10:31:22.0853719Z ##[debug]      "stargazers_count": 0,
+2025-02-08T10:31:22.0854516Z ##[debug]      "stargazers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/stargazers",
+2025-02-08T10:31:22.0855606Z ##[debug]      "statuses_url": "https://api.github.com/repos/Piasecki-grid/solar-system/statuses/{sha}",
+2025-02-08T10:31:22.0856695Z ##[debug]      "subscribers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscribers",
+2025-02-08T10:31:22.0857823Z ##[debug]      "subscription_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscription",
+2025-02-08T10:31:22.0858778Z ##[debug]      "svn_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0859624Z ##[debug]      "tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/tags",
+2025-02-08T10:31:22.0860665Z ##[debug]      "teams_url": "https://api.github.com/repos/Piasecki-grid/solar-system/teams",
+2025-02-08T10:31:22.0861403Z ##[debug]      "topics": [],
+2025-02-08T10:31:22.0862146Z ##[debug]      "trees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/trees{/sha}",
+2025-02-08T10:31:22.0862988Z ##[debug]      "updated_at": "2025-02-08T08:38:06Z",
+2025-02-08T10:31:22.0863654Z ##[debug]      "url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0864319Z ##[debug]      "visibility": "public",
+2025-02-08T10:31:22.0864841Z ##[debug]      "watchers": 0,
+2025-02-08T10:31:22.0865321Z ##[debug]      "watchers_count": 0,
+2025-02-08T10:31:22.0865869Z ##[debug]      "web_commit_signoff_required": false
+2025-02-08T10:31:22.0866419Z ##[debug]    },
+2025-02-08T10:31:22.0866827Z ##[debug]    "sender": {
+2025-02-08T10:31:22.0867466Z ##[debug]      "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.0868396Z ##[debug]      "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.0869335Z ##[debug]      "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.0870550Z ##[debug]      "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.0871557Z ##[debug]      "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.0872296Z ##[debug]      "gravatar_id": "",
+2025-02-08T10:31:22.0872879Z ##[debug]      "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.0873488Z ##[debug]      "id": 192516429,
+2025-02-08T10:31:22.0873973Z ##[debug]      "login": "Piasecki-grid",
+2025-02-08T10:31:22.0874507Z ##[debug]      "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.0875228Z ##[debug]      "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.0876224Z ##[debug]      "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.0877287Z ##[debug]      "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.0878130Z ##[debug]      "site_admin": false,
+2025-02-08T10:31:22.0878882Z ##[debug]      "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.0879916Z ##[debug]      "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.0880802Z ##[debug]      "type": "User",
+2025-02-08T10:31:22.0881377Z ##[debug]      "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.0882023Z ##[debug]      "user_view_type": "public"
+2025-02-08T10:31:22.0882538Z ##[debug]    }
+2025-02-08T10:31:22.0882930Z ##[debug]  },
+2025-02-08T10:31:22.0883369Z ##[debug]  "server_url": "https://github.com",
+2025-02-08T10:31:22.0883957Z ##[debug]  "api_url": "https://api.github.com",
+2025-02-08T10:31:22.0884609Z ##[debug]  "graphql_url": "https://api.github.com/graphql",
+2025-02-08T10:31:22.0885220Z ##[debug]  "ref_name": "main",
+2025-02-08T10:31:22.0885696Z ##[debug]  "ref_protected": false,
+2025-02-08T10:31:22.0886203Z ##[debug]  "ref_type": "branch",
+2025-02-08T10:31:22.0886705Z ##[debug]  "secret_source": "Actions",
+2025-02-08T10:31:22.0887588Z ##[debug]  "workflow_ref": "Piasecki-grid/solar-system/.github/workflows/context-workflow.yml@refs/heads/main",
+2025-02-08T10:31:22.0888600Z ##[debug]  "workflow_sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0889374Z ##[debug]  "workspace": "/home/runner/work/solar-system/solar-system",
+2025-02-08T10:31:22.0890021Z ##[debug]  "action": "__run"
+2025-02-08T10:31:22.0890573Z ##[debug]}'
+2025-02-08T10:31:22.0894585Z ##[debug]Result: '{
+2025-02-08T10:31:22.0895268Z ##[debug]  "token": "***",
+2025-02-08T10:31:22.0895756Z ##[debug]  "job": "dump_contexts_to_log",
+2025-02-08T10:31:22.0896300Z ##[debug]  "ref": "refs/heads/main",
+2025-02-08T10:31:22.0896873Z ##[debug]  "sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0897758Z ##[debug]  "repository": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0898377Z ##[debug]  "repository_owner": "Piasecki-grid",
+2025-02-08T10:31:22.0898956Z ##[debug]  "repository_owner_id": "192516429",
+2025-02-08T10:31:22.0899676Z ##[debug]  "repositoryUrl": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0900374Z ##[debug]  "run_id": "13214808380",
+2025-02-08T10:31:22.0901202Z ##[debug]  "run_number": "7",
+2025-02-08T10:31:22.0901680Z ##[debug]  "retention_days": "90",
+2025-02-08T10:31:22.0902179Z ##[debug]  "run_attempt": "1",
+2025-02-08T10:31:22.0902676Z ##[debug]  "artifact_cache_size_limit": "10",
+2025-02-08T10:31:22.0903234Z ##[debug]  "repository_visibility": "public",
+2025-02-08T10:31:22.0903829Z ##[debug]  "repo-self-hosted-runners-disabled": false,
+2025-02-08T10:31:22.0904479Z ##[debug]  "enterprise-managed-business-id": "",
+2025-02-08T10:31:22.0905046Z ##[debug]  "repository_id": "928423468",
+2025-02-08T10:31:22.0905566Z ##[debug]  "actor_id": "192516429",
+2025-02-08T10:31:22.0906073Z ##[debug]  "actor": "Piasecki-grid",
+2025-02-08T10:31:22.0906611Z ##[debug]  "triggering_actor": "Piasecki-grid",
+2025-02-08T10:31:22.0907176Z ##[debug]  "workflow": "Context testing",
+2025-02-08T10:31:22.0907870Z ##[debug]  "head_ref": "",
+2025-02-08T10:31:22.0908330Z ##[debug]  "base_ref": "",
+2025-02-08T10:31:22.0908789Z ##[debug]  "event_name": "push",
+2025-02-08T10:31:22.0909259Z ##[debug]  "event": {
+2025-02-08T10:31:22.0909772Z ##[debug]    "after": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0910375Z ##[debug]    "base_ref": null,
+2025-02-08T10:31:22.0911070Z ##[debug]    "before": "b11db1cf779a89d861db17ad0f89bd37f7b19389",
+2025-02-08T10:31:22.0911694Z ##[debug]    "commits": [
+2025-02-08T10:31:22.0912128Z ##[debug]      {
+2025-02-08T10:31:22.0912537Z ##[debug]        "author": {
+2025-02-08T10:31:22.0913051Z ##[debug]          "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0913652Z ##[debug]          "name": "Piasecki-grid",
+2025-02-08T10:31:22.0914364Z ##[debug]          "username": "Piasecki-grid"
+2025-02-08T10:31:22.0914887Z ##[debug]        },
+2025-02-08T10:31:22.0915299Z ##[debug]        "committer": {
+2025-02-08T10:31:22.0915837Z ##[debug]          "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0916415Z ##[debug]          "name": "Piasecki-grid",
+2025-02-08T10:31:22.0916979Z ##[debug]          "username": "Piasecki-grid"
+2025-02-08T10:31:22.0917498Z ##[debug]        },
+2025-02-08T10:31:22.0917998Z ##[debug]        "distinct": true,
+2025-02-08T10:31:22.0918571Z ##[debug]        "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0919187Z ##[debug]        "message": "checking logging",
+2025-02-08T10:31:22.0919778Z ##[debug]        "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.0920606Z ##[debug]        "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.0921679Z ##[debug]        "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.0922611Z ##[debug]      }
+2025-02-08T10:31:22.0923090Z ##[debug]    ],
+2025-02-08T10:31:22.0923824Z ##[debug]    "compare": "https://github.com/Piasecki-grid/solar-system/compare/b11db1cf779a...b55d5471c61c",
+2025-02-08T10:31:22.0924671Z ##[debug]    "created": false,
+2025-02-08T10:31:22.0925134Z ##[debug]    "deleted": false,
+2025-02-08T10:31:22.0925591Z ##[debug]    "forced": true,
+2025-02-08T10:31:22.0926045Z ##[debug]    "head_commit": {
+2025-02-08T10:31:22.0926498Z ##[debug]      "author": {
+2025-02-08T10:31:22.0926996Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0927567Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0928105Z ##[debug]        "username": "Piasecki-grid"
+2025-02-08T10:31:22.0928616Z ##[debug]      },
+2025-02-08T10:31:22.0929014Z ##[debug]      "committer": {
+2025-02-08T10:31:22.0929531Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0930109Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0930759Z ##[debug]        "username": "Piasecki-grid"
+2025-02-08T10:31:22.0931265Z ##[debug]      },
+2025-02-08T10:31:22.0931676Z ##[debug]      "distinct": true,
+2025-02-08T10:31:22.0932221Z ##[debug]      "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.0932824Z ##[debug]      "message": "checking logging",
+2025-02-08T10:31:22.0933397Z ##[debug]      "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.0934038Z ##[debug]      "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.0935017Z ##[debug]      "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.0935901Z ##[debug]    },
+2025-02-08T10:31:22.0936299Z ##[debug]    "pusher": {
+2025-02-08T10:31:22.0936784Z ##[debug]      "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0937366Z ##[debug]      "name": "Piasecki-grid"
+2025-02-08T10:31:22.0937859Z ##[debug]    },
+2025-02-08T10:31:22.0938271Z ##[debug]    "ref": "refs/heads/main",
+2025-02-08T10:31:22.0938777Z ##[debug]    "repository": {
+2025-02-08T10:31:22.0939235Z ##[debug]      "allow_forking": true,
+2025-02-08T10:31:22.0940214Z ##[debug]      "archive_url": "https://api.github.com/repos/Piasecki-grid/solar-system/{archive_format}{/ref}",
+2025-02-08T10:31:22.0941319Z ##[debug]      "archived": false,
+2025-02-08T10:31:22.0942106Z ##[debug]      "assignees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/assignees{/user}",
+2025-02-08T10:31:22.0943186Z ##[debug]      "blobs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/blobs{/sha}",
+2025-02-08T10:31:22.0944262Z ##[debug]      "branches_url": "https://api.github.com/repos/Piasecki-grid/solar-system/branches{/branch}",
+2025-02-08T10:31:22.0945243Z ##[debug]      "clone_url": "https://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0946313Z ##[debug]      "collaborators_url": "https://api.github.com/repos/Piasecki-grid/solar-system/collaborators{/collaborator}",
+2025-02-08T10:31:22.0947673Z ##[debug]      "comments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/comments{/number}",
+2025-02-08T10:31:22.0948757Z ##[debug]      "commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/commits{/sha}",
+2025-02-08T10:31:22.0949865Z ##[debug]      "compare_url": "https://api.github.com/repos/Piasecki-grid/solar-system/compare/{base}...{head}",
+2025-02-08T10:31:22.0951117Z ##[debug]      "contents_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contents/{+path}",
+2025-02-08T10:31:22.0952214Z ##[debug]      "contributors_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contributors",
+2025-02-08T10:31:22.0953032Z ##[debug]      "created_at": 1738857930,
+2025-02-08T10:31:22.0953548Z ##[debug]      "default_branch": "main",
+2025-02-08T10:31:22.0954355Z ##[debug]      "deployments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/deployments",
+2025-02-08T10:31:22.0955173Z ##[debug]      "description": null,
+2025-02-08T10:31:22.0955687Z ##[debug]      "disabled": false,
+2025-02-08T10:31:22.0956451Z ##[debug]      "downloads_url": "https://api.github.com/repos/Piasecki-grid/solar-system/downloads",
+2025-02-08T10:31:22.0957632Z ##[debug]      "events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/events",
+2025-02-08T10:31:22.0958466Z ##[debug]      "fork": true,
+2025-02-08T10:31:22.0958918Z ##[debug]      "forks": 0,
+2025-02-08T10:31:22.0959370Z ##[debug]      "forks_count": 0,
+2025-02-08T10:31:22.0960065Z ##[debug]      "forks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/forks",
+2025-02-08T10:31:22.0960960Z ##[debug]      "full_name": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0961849Z ##[debug]      "git_commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/commits{/sha}",
+2025-02-08T10:31:22.0962942Z ##[debug]      "git_refs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/refs{/sha}",
+2025-02-08T10:31:22.0963992Z ##[debug]      "git_tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/tags{/sha}",
+2025-02-08T10:31:22.0964906Z ##[debug]      "git_url": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.0965566Z ##[debug]      "has_discussions": false,
+2025-02-08T10:31:22.0966083Z ##[debug]      "has_downloads": true,
+2025-02-08T10:31:22.0966588Z ##[debug]      "has_issues": false,
+2025-02-08T10:31:22.0967079Z ##[debug]      "has_pages": false,
+2025-02-08T10:31:22.0967557Z ##[debug]      "has_projects": true,
+2025-02-08T10:31:22.0968053Z ##[debug]      "has_wiki": true,
+2025-02-08T10:31:22.0968524Z ##[debug]      "homepage": null,
+2025-02-08T10:31:22.0969210Z ##[debug]      "hooks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/hooks",
+2025-02-08T10:31:22.0970069Z ##[debug]      "html_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.0970828Z ##[debug]      "id": 928423468,
+2025-02-08T10:31:22.0971293Z ##[debug]      "is_template": false,
+2025-02-08T10:31:22.0972165Z ##[debug]      "issue_comment_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/comments{/number}",
+2025-02-08T10:31:22.0973548Z ##[debug]      "issue_events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/events{/number}",
+2025-02-08T10:31:22.0974693Z ##[debug]      "issues_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues{/number}",
+2025-02-08T10:31:22.0975726Z ##[debug]      "keys_url": "https://api.github.com/repos/Piasecki-grid/solar-system/keys{/key_id}",
+2025-02-08T10:31:22.0976748Z ##[debug]      "labels_url": "https://api.github.com/repos/Piasecki-grid/solar-system/labels{/name}",
+2025-02-08T10:31:22.0977530Z ##[debug]      "language": "JavaScript",
+2025-02-08T10:31:22.0978300Z ##[debug]      "languages_url": "https://api.github.com/repos/Piasecki-grid/solar-system/languages",
+2025-02-08T10:31:22.0979070Z ##[debug]      "license": null,
+2025-02-08T10:31:22.0979546Z ##[debug]      "master_branch": "main",
+2025-02-08T10:31:22.0980521Z ##[debug]      "merges_url": "https://api.github.com/repos/Piasecki-grid/solar-system/merges",
+2025-02-08T10:31:22.0981608Z ##[debug]      "milestones_url": "https://api.github.com/repos/Piasecki-grid/solar-system/milestones{/number}",
+2025-02-08T10:31:22.0982445Z ##[debug]      "mirror_url": null,
+2025-02-08T10:31:22.0982942Z ##[debug]      "name": "solar-system",
+2025-02-08T10:31:22.0983447Z ##[debug]      "node_id": "R_kgDON1aeLA",
+2025-02-08T10:31:22.0984444Z ##[debug]      "notifications_url": "https://api.github.com/repos/Piasecki-grid/solar-system/notifications{?since,all,participating}",
+2025-02-08T10:31:22.0985435Z ##[debug]      "open_issues": 0,
+2025-02-08T10:31:22.0985916Z ##[debug]      "open_issues_count": 0,
+2025-02-08T10:31:22.0986402Z ##[debug]      "owner": {
+2025-02-08T10:31:22.0987033Z ##[debug]        "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.0987792Z ##[debug]        "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.0988569Z ##[debug]        "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.0989483Z ##[debug]        "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.0990556Z ##[debug]        "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.0991554Z ##[debug]        "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.0992280Z ##[debug]        "gravatar_id": "",
+2025-02-08T10:31:22.0992860Z ##[debug]        "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.0993457Z ##[debug]        "id": 192516429,
+2025-02-08T10:31:22.0993946Z ##[debug]        "login": "Piasecki-grid",
+2025-02-08T10:31:22.0994469Z ##[debug]        "name": "Piasecki-grid",
+2025-02-08T10:31:22.0994994Z ##[debug]        "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.0995704Z ##[debug]        "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.0996682Z ##[debug]        "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.0997614Z ##[debug]        "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.0998288Z ##[debug]        "site_admin": false,
+2025-02-08T10:31:22.0999031Z ##[debug]        "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.1000037Z ##[debug]        "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.1000894Z ##[debug]        "type": "User",
+2025-02-08T10:31:22.1001467Z ##[debug]        "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.1002089Z ##[debug]        "user_view_type": "public"
+2025-02-08T10:31:22.1002599Z ##[debug]      },
+2025-02-08T10:31:22.1003016Z ##[debug]      "private": false,
+2025-02-08T10:31:22.1003746Z ##[debug]      "pulls_url": "https://api.github.com/repos/Piasecki-grid/solar-system/pulls{/number}",
+2025-02-08T10:31:22.1004540Z ##[debug]      "pushed_at": 1739010673,
+2025-02-08T10:31:22.1005314Z ##[debug]      "releases_url": "https://api.github.com/repos/Piasecki-grid/solar-system/releases{/id}",
+2025-02-08T10:31:22.1006219Z ##[debug]      "size": 1733,
+2025-02-08T10:31:22.1006805Z ##[debug]      "ssh_url": "git@github.com:Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.1007439Z ##[debug]      "stargazers": 0,
+2025-02-08T10:31:22.1007907Z ##[debug]      "stargazers_count": 0,
+2025-02-08T10:31:22.1008682Z ##[debug]      "stargazers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/stargazers",
+2025-02-08T10:31:22.1009747Z ##[debug]      "statuses_url": "https://api.github.com/repos/Piasecki-grid/solar-system/statuses/{sha}",
+2025-02-08T10:31:22.1010917Z ##[debug]      "subscribers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscribers",
+2025-02-08T10:31:22.1012026Z ##[debug]      "subscription_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscription",
+2025-02-08T10:31:22.1013096Z ##[debug]      "svn_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.1013932Z ##[debug]      "tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/tags",
+2025-02-08T10:31:22.1014844Z ##[debug]      "teams_url": "https://api.github.com/repos/Piasecki-grid/solar-system/teams",
+2025-02-08T10:31:22.1015570Z ##[debug]      "topics": [],
+2025-02-08T10:31:22.1016288Z ##[debug]      "trees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/trees{/sha}",
+2025-02-08T10:31:22.1017106Z ##[debug]      "updated_at": "2025-02-08T08:38:06Z",
+2025-02-08T10:31:22.1017757Z ##[debug]      "url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.1018392Z ##[debug]      "visibility": "public",
+2025-02-08T10:31:22.1018886Z ##[debug]      "watchers": 0,
+2025-02-08T10:31:22.1019349Z ##[debug]      "watchers_count": 0,
+2025-02-08T10:31:22.1019875Z ##[debug]      "web_commit_signoff_required": false
+2025-02-08T10:31:22.1020509Z ##[debug]    },
+2025-02-08T10:31:22.1020906Z ##[debug]    "sender": {
+2025-02-08T10:31:22.1021520Z ##[debug]      "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.1022443Z ##[debug]      "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.1023371Z ##[debug]      "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.1024343Z ##[debug]      "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.1025311Z ##[debug]      "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.1026031Z ##[debug]      "gravatar_id": "",
+2025-02-08T10:31:22.1026602Z ##[debug]      "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.1027191Z ##[debug]      "id": 192516429,
+2025-02-08T10:31:22.1027666Z ##[debug]      "login": "Piasecki-grid",
+2025-02-08T10:31:22.1028194Z ##[debug]      "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.1028906Z ##[debug]      "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.1029881Z ##[debug]      "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.1030902Z ##[debug]      "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.1031565Z ##[debug]      "site_admin": false,
+2025-02-08T10:31:22.1032304Z ##[debug]      "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.1033321Z ##[debug]      "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.1034081Z ##[debug]      "type": "User",
+2025-02-08T10:31:22.1034651Z ##[debug]      "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.1035265Z ##[debug]      "user_view_type": "public"
+2025-02-08T10:31:22.1035757Z ##[debug]    }
+2025-02-08T10:31:22.1036135Z ##[debug]  },
+2025-02-08T10:31:22.1036569Z ##[debug]  "server_url": "https://github.com",
+2025-02-08T10:31:22.1037159Z ##[debug]  "api_url": "https://api.github.com",
+2025-02-08T10:31:22.1037798Z ##[debug]  "graphql_url": "https://api.github.com/graphql",
+2025-02-08T10:31:22.1038505Z ##[debug]  "ref_name": "main",
+2025-02-08T10:31:22.1038998Z ##[debug]  "ref_protected": false,
+2025-02-08T10:31:22.1039494Z ##[debug]  "ref_type": "branch",
+2025-02-08T10:31:22.1039987Z ##[debug]  "secret_source": "Actions",
+2025-02-08T10:31:22.1040961Z ##[debug]  "workflow_ref": "Piasecki-grid/solar-system/.github/workflows/context-workflow.yml@refs/heads/main",
+2025-02-08T10:31:22.1041959Z ##[debug]  "workflow_sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.1042713Z ##[debug]  "workspace": "/home/runner/work/solar-system/solar-system",
+2025-02-08T10:31:22.1043359Z ##[debug]  "action": "__run"
+2025-02-08T10:31:22.1043796Z ##[debug]}'
+2025-02-08T10:31:22.1063741Z ##[debug]Evaluating condition for step: 'Dump GitHub context'
+2025-02-08T10:31:22.1077171Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.1078545Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.1087029Z ##[debug]=> true
+2025-02-08T10:31:22.1087870Z ##[debug]Result: true
+2025-02-08T10:31:22.1103267Z ##[debug]Starting: Dump GitHub context
+2025-02-08T10:31:22.1245100Z ##[debug]Loading inputs
+2025-02-08T10:31:22.1250823Z ##[debug]Loading env
+2025-02-08T10:31:22.1313929Z ##[group]Run echo "$GITHUB_CONTEXT"
+2025-02-08T10:31:22.1314517Z [36;1mecho "$GITHUB_CONTEXT"[0m
+2025-02-08T10:31:22.1559563Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.1561075Z env:
+2025-02-08T10:31:22.1643129Z   GITHUB_CONTEXT: {
+  "token": "***",
+  "job": "dump_contexts_to_log",
+  "ref": "refs/heads/main",
+  "sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+  "repository": "Piasecki-grid/solar-system",
+  "repository_owner": "Piasecki-grid",
+  "repository_owner_id": "192516429",
+  "repositoryUrl": "git://github.com/Piasecki-grid/solar-system.git",
+  "run_id": "13214808380",
+  "run_number": "7",
+  "retention_days": "90",
+  "run_attempt": "1",
+  "artifact_cache_size_limit": "10",
+  "repository_visibility": "public",
+  "repo-self-hosted-runners-disabled": false,
+  "enterprise-managed-business-id": "",
+  "repository_id": "928423468",
+  "actor_id": "192516429",
+  "actor": "Piasecki-grid",
+  "triggering_actor": "Piasecki-grid",
+  "workflow": "Context testing",
+  "head_ref": "",
+  "base_ref": "",
+  "event_name": "push",
+  "event": {
+    "after": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+    "base_ref": null,
+    "before": "b11db1cf779a89d861db17ad0f89bd37f7b19389",
+    "commits": [
+      {
+        "author": {
+          "email": "kpiasecki@griddynamics.com",
+          "name": "Piasecki-grid",
+          "username": "Piasecki-grid"
+        },
+        "committer": {
+          "email": "kpiasecki@griddynamics.com",
+          "name": "Piasecki-grid",
+          "username": "Piasecki-grid"
+        },
+        "distinct": true,
+        "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+        "message": "checking logging",
+        "timestamp": "2025-02-08T11:27:43+01:00",
+        "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+        "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+      }
+    ],
+    "compare": "https://github.com/Piasecki-grid/solar-system/compare/b11db1cf779a...b55d5471c61c",
+    "created": false,
+    "deleted": false,
+    "forced": true,
+    "head_commit": {
+      "author": {
+        "email": "kpiasecki@griddynamics.com",
+        "name": "Piasecki-grid",
+        "username": "Piasecki-grid"
+      },
+      "committer": {
+        "email": "kpiasecki@griddynamics.com",
+        "name": "Piasecki-grid",
+        "username": "Piasecki-grid"
+      },
+      "distinct": true,
+      "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+      "message": "checking logging",
+      "timestamp": "2025-02-08T11:27:43+01:00",
+      "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+      "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+    },
+    "pusher": {
+      "email": "kpiasecki@griddynamics.com",
+      "name": "Piasecki-grid"
+    },
+    "ref": "refs/heads/main",
+    "repository": {
+      "allow_forking": true,
+      "archive_url": "https://api.github.com/repos/Piasecki-grid/solar-system/{archive_format}{/ref}",
+      "archived": false,
+      "assignees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/assignees{/user}",
+      "blobs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/blobs{/sha}",
+      "branches_url": "https://api.github.com/repos/Piasecki-grid/solar-system/branches{/branch}",
+      "clone_url": "https://github.com/Piasecki-grid/solar-system.git",
+      "collaborators_url": "https://api.github.com/repos/Piasecki-grid/solar-system/collaborators{/collaborator}",
+      "comments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/comments{/number}",
+      "commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/commits{/sha}",
+      "compare_url": "https://api.github.com/repos/Piasecki-grid/solar-system/compare/{base}...{head}",
+      "contents_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contents/{+path}",
+      "contributors_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contributors",
+      "created_at": 1738857930,
+      "default_branch": "main",
+      "deployments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/deployments",
+      "description": null,
+      "disabled": false,
+      "downloads_url": "https://api.github.com/repos/Piasecki-grid/solar-system/downloads",
+      "events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/events",
+      "fork": true,
+      "forks": 0,
+      "forks_count": 0,
+      "forks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/forks",
+      "full_name": "Piasecki-grid/solar-system",
+      "git_commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/commits{/sha}",
+      "git_refs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/refs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/tags{/sha}",
+      "git_url": "git://github.com/Piasecki-grid/solar-system.git",
+      "has_discussions": false,
+      "has_downloads": true,
+      "has_issues": false,
+      "has_pages": false,
+      "has_projects": true,
+      "has_wiki": true,
+      "homepage": null,
+      "hooks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/hooks",
+      "html_url": "https://github.com/Piasecki-grid/solar-system",
+      "id": 928423468,
+      "is_template": false,
+      "issue_comment_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/comments{/number}",
+      "issue_events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/events{/number}",
+      "issues_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues{/number}",
+      "keys_url": "https://api.github.com/repos/Piasecki-grid/solar-system/keys{/key_id}",
+      "labels_url": "https://api.github.com/repos/Piasecki-grid/solar-system/labels{/name}",
+      "language": "JavaScript",
+      "languages_url": "https://api.github.com/repos/Piasecki-grid/solar-system/languages",
+      "license": null,
+      "master_branch": "main",
+      "merges_url": "https://api.github.com/repos/Piasecki-grid/solar-system/merges",
+      "milestones_url": "https://api.github.com/repos/Piasecki-grid/solar-system/milestones{/number}",
+      "mirror_url": null,
+      "name": "solar-system",
+      "node_id": "R_kgDON1aeLA",
+      "notifications_url": "https://api.github.com/repos/Piasecki-grid/solar-system/notifications{?since,all,participating}",
+      "open_issues": 0,
+      "open_issues_count": 0,
+      "owner": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+        "email": "kpiasecki@griddynamics.com",
+        "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+        "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Piasecki-grid",
+        "id": 192516429,
+        "login": "Piasecki-grid",
+        "name": "Piasecki-grid",
+        "node_id": "U_kgDOC3mRTQ",
+        "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+        "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+        "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Piasecki-grid",
+        "user_view_type": "public"
+      },
+      "private": false,
+      "pulls_url": "https://api.github.com/repos/Piasecki-grid/solar-system/pulls{/number}",
+      "pushed_at": 1739010673,
+      "releases_url": "https://api.github.com/repos/Piasecki-grid/solar-system/releases{/id}",
+      "size": 1733,
+      "ssh_url": "git@github.com:Piasecki-grid/solar-system.git",
+      "stargazers": 0,
+      "stargazers_count": 0,
+      "stargazers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/stargazers",
+      "statuses_url": "https://api.github.com/repos/Piasecki-grid/solar-system/statuses/{sha}",
+      "subscribers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscribers",
+      "subscription_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscription",
+      "svn_url": "https://github.com/Piasecki-grid/solar-system",
+      "tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/tags",
+      "teams_url": "https://api.github.com/repos/Piasecki-grid/solar-system/teams",
+      "topics": [],
+      "trees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/trees{/sha}",
+      "updated_at": "2025-02-08T08:38:06Z",
+      "url": "https://github.com/Piasecki-grid/solar-system",
+      "visibility": "public",
+      "watchers": 0,
+      "watchers_count": 0,
+      "web_commit_signoff_required": false
+    },
+    "sender": {
+      "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+      "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+      "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+      "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+      "gravatar_id": "",
+      "html_url": "https://github.com/Piasecki-grid",
+      "id": 192516429,
+      "login": "Piasecki-grid",
+      "node_id": "U_kgDOC3mRTQ",
+      "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+      "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+      "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+      "site_admin": false,
+      "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/Piasecki-grid",
+      "user_view_type": "public"
+    }
+  },
+  "server_url": "https://github.com",
+  "api_url": "https://api.github.com",
+  "graphql_url": "https://api.github.com/graphql",
+  "ref_name": "main",
+  "ref_protected": false,
+  "ref_type": "branch",
+  "secret_source": "Actions",
+  "workflow_ref": "Piasecki-grid/solar-system/.github/workflows/context-workflow.yml@refs/heads/main",
+  "workflow_sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+  "workspace": "/home/runner/work/solar-system/solar-system",
+  "action": "__run"
+}
+2025-02-08T10:31:22.1693725Z ##[endgroup]
+2025-02-08T10:31:22.1759431Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/12d79599-6fc1-4c17-af46-12417d628fcf.sh
+2025-02-08T10:31:22.1883090Z {
+2025-02-08T10:31:22.1884135Z   "token": "***",
+2025-02-08T10:31:22.1884934Z   "job": "dump_contexts_to_log",
+2025-02-08T10:31:22.1886114Z   "ref": "refs/heads/main",
+2025-02-08T10:31:22.1887289Z   "sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.1888532Z   "repository": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.1889577Z   "repository_owner": "Piasecki-grid",
+2025-02-08T10:31:22.1890744Z   "repository_owner_id": "192516429",
+2025-02-08T10:31:22.1891972Z   "repositoryUrl": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.1893193Z   "run_id": "13214808380",
+2025-02-08T10:31:22.1894003Z   "run_number": "7",
+2025-02-08T10:31:22.1894752Z   "retention_days": "90",
+2025-02-08T10:31:22.1895604Z   "run_attempt": "1",
+2025-02-08T10:31:22.1896390Z   "artifact_cache_size_limit": "10",
+2025-02-08T10:31:22.1897352Z   "repository_visibility": "public",
+2025-02-08T10:31:22.1898350Z   "repo-self-hosted-runners-disabled": false,
+2025-02-08T10:31:22.1899398Z   "enterprise-managed-business-id": "",
+2025-02-08T10:31:22.1899941Z   "repository_id": "928423468",
+2025-02-08T10:31:22.1900597Z   "actor_id": "192516429",
+2025-02-08T10:31:22.1901111Z   "actor": "Piasecki-grid",
+2025-02-08T10:31:22.1901649Z   "triggering_actor": "Piasecki-grid",
+2025-02-08T10:31:22.1902188Z   "workflow": "Context testing",
+2025-02-08T10:31:22.1902646Z   "head_ref": "",
+2025-02-08T10:31:22.1903043Z   "base_ref": "",
+2025-02-08T10:31:22.1903438Z   "event_name": "push",
+2025-02-08T10:31:22.1903857Z   "event": {
+2025-02-08T10:31:22.1904296Z     "after": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.1904859Z     "base_ref": null,
+2025-02-08T10:31:22.1905344Z     "before": "b11db1cf779a89d861db17ad0f89bd37f7b19389",
+2025-02-08T10:31:22.1905887Z     "commits": [
+2025-02-08T10:31:22.1906273Z       {
+2025-02-08T10:31:22.1906624Z         "author": {
+2025-02-08T10:31:22.1907055Z           "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.1907600Z           "name": "Piasecki-grid",
+2025-02-08T10:31:22.1908085Z           "username": "Piasecki-grid"
+2025-02-08T10:31:22.1908566Z         },
+2025-02-08T10:31:22.1908932Z         "committer": {
+2025-02-08T10:31:22.1909387Z           "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.1909914Z           "name": "Piasecki-grid",
+2025-02-08T10:31:22.1910690Z           "username": "Piasecki-grid"
+2025-02-08T10:31:22.1911182Z         },
+2025-02-08T10:31:22.1911551Z         "distinct": true,
+2025-02-08T10:31:22.1912032Z         "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.1912588Z         "message": "checking logging",
+2025-02-08T10:31:22.1913129Z         "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.1913727Z         "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.1914644Z         "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.1915490Z       }
+2025-02-08T10:31:22.1915844Z     ],
+2025-02-08T10:31:22.1916523Z     "compare": "https://github.com/Piasecki-grid/solar-system/compare/b11db1cf779a...b55d5471c61c",
+2025-02-08T10:31:22.1917320Z     "created": false,
+2025-02-08T10:31:22.1917740Z     "deleted": false,
+2025-02-08T10:31:22.1918237Z     "forced": true,
+2025-02-08T10:31:22.1918645Z     "head_commit": {
+2025-02-08T10:31:22.1919045Z       "author": {
+2025-02-08T10:31:22.1919483Z         "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.1920023Z         "name": "Piasecki-grid",
+2025-02-08T10:31:22.1920704Z         "username": "Piasecki-grid"
+2025-02-08T10:31:22.1921184Z       },
+2025-02-08T10:31:22.1921551Z       "committer": {
+2025-02-08T10:31:22.1922005Z         "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.1922539Z         "name": "Piasecki-grid",
+2025-02-08T10:31:22.1923025Z         "username": "Piasecki-grid"
+2025-02-08T10:31:22.1923485Z       },
+2025-02-08T10:31:22.1923850Z       "distinct": true,
+2025-02-08T10:31:22.1924319Z       "id": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.1924886Z       "message": "checking logging",
+2025-02-08T10:31:22.1925402Z       "timestamp": "2025-02-08T11:27:43+01:00",
+2025-02-08T10:31:22.1926148Z       "tree_id": "6318e7e78ab08373607899fcca9697d8ca737959",
+2025-02-08T10:31:22.1927069Z       "url": "https://github.com/Piasecki-grid/solar-system/commit/b55d5471c61c93bbd284c34f018e40b393109ebc"
+2025-02-08T10:31:22.1927908Z     },
+2025-02-08T10:31:22.1928271Z     "pusher": {
+2025-02-08T10:31:22.1928703Z       "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.1929228Z       "name": "Piasecki-grid"
+2025-02-08T10:31:22.1929681Z     },
+2025-02-08T10:31:22.1930058Z     "ref": "refs/heads/main",
+2025-02-08T10:31:22.1930687Z     "repository": {
+2025-02-08T10:31:22.1931109Z       "allow_forking": true,
+2025-02-08T10:31:22.1931862Z       "archive_url": "https://api.github.com/repos/Piasecki-grid/solar-system/{archive_format}{/ref}",
+2025-02-08T10:31:22.1932993Z       "archived": false,
+2025-02-08T10:31:22.1933868Z       "assignees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/assignees{/user}",
+2025-02-08T10:31:22.1934902Z       "blobs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/blobs{/sha}",
+2025-02-08T10:31:22.1935923Z       "branches_url": "https://api.github.com/repos/Piasecki-grid/solar-system/branches{/branch}",
+2025-02-08T10:31:22.1937142Z       "clone_url": "https://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.1938318Z       "collaborators_url": "https://api.github.com/repos/Piasecki-grid/solar-system/collaborators{/collaborator}",
+2025-02-08T10:31:22.1939551Z       "comments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/comments{/number}",
+2025-02-08T10:31:22.1940805Z       "commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/commits{/sha}",
+2025-02-08T10:31:22.1999084Z       "compare_url": "https://api.github.com/repos/Piasecki-grid/solar-system/compare/{base}...{head}",
+2025-02-08T10:31:22.2001037Z       "contents_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contents/{+path}",
+2025-02-08T10:31:22.2002161Z       "contributors_url": "https://api.github.com/repos/Piasecki-grid/solar-system/contributors",
+2025-02-08T10:31:22.2002980Z       "created_at": 1738857930,
+2025-02-08T10:31:22.2003454Z       "default_branch": "main",
+2025-02-08T10:31:22.2004202Z       "deployments_url": "https://api.github.com/repos/Piasecki-grid/solar-system/deployments",
+2025-02-08T10:31:22.2004987Z       "description": null,
+2025-02-08T10:31:22.2005428Z       "disabled": false,
+2025-02-08T10:31:22.2006099Z       "downloads_url": "https://api.github.com/repos/Piasecki-grid/solar-system/downloads",
+2025-02-08T10:31:22.2007043Z       "events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/events",
+2025-02-08T10:31:22.2007734Z       "fork": true,
+2025-02-08T10:31:22.2008115Z       "forks": 0,
+2025-02-08T10:31:22.2008517Z       "forks_count": 0,
+2025-02-08T10:31:22.2009127Z       "forks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/forks",
+2025-02-08T10:31:22.2009863Z       "full_name": "Piasecki-grid/solar-system",
+2025-02-08T10:31:22.2010966Z       "git_commits_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/commits{/sha}",
+2025-02-08T10:31:22.2012003Z       "git_refs_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/refs{/sha}",
+2025-02-08T10:31:22.2012994Z       "git_tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/tags{/sha}",
+2025-02-08T10:31:22.2013834Z       "git_url": "git://github.com/Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.2014442Z       "has_discussions": false,
+2025-02-08T10:31:22.2014902Z       "has_downloads": true,
+2025-02-08T10:31:22.2015347Z       "has_issues": false,
+2025-02-08T10:31:22.2015776Z       "has_pages": false,
+2025-02-08T10:31:22.2016213Z       "has_projects": true,
+2025-02-08T10:31:22.2016647Z       "has_wiki": true,
+2025-02-08T10:31:22.2017058Z       "homepage": null,
+2025-02-08T10:31:22.2017670Z       "hooks_url": "https://api.github.com/repos/Piasecki-grid/solar-system/hooks",
+2025-02-08T10:31:22.2018472Z       "html_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.2019235Z       "id": 928423468,
+2025-02-08T10:31:22.2019670Z       "is_template": false,
+2025-02-08T10:31:22.2020659Z       "issue_comment_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/comments{/number}",
+2025-02-08T10:31:22.2021856Z       "issue_events_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues/events{/number}",
+2025-02-08T10:31:22.2022921Z       "issues_url": "https://api.github.com/repos/Piasecki-grid/solar-system/issues{/number}",
+2025-02-08T10:31:22.2023878Z       "keys_url": "https://api.github.com/repos/Piasecki-grid/solar-system/keys{/key_id}",
+2025-02-08T10:31:22.2024826Z       "labels_url": "https://api.github.com/repos/Piasecki-grid/solar-system/labels{/name}",
+2025-02-08T10:31:22.2025567Z       "language": "JavaScript",
+2025-02-08T10:31:22.2026419Z       "languages_url": "https://api.github.com/repos/Piasecki-grid/solar-system/languages",
+2025-02-08T10:31:22.2027147Z       "license": null,
+2025-02-08T10:31:22.2027566Z       "master_branch": "main",
+2025-02-08T10:31:22.2028224Z       "merges_url": "https://api.github.com/repos/Piasecki-grid/solar-system/merges",
+2025-02-08T10:31:22.2029226Z       "milestones_url": "https://api.github.com/repos/Piasecki-grid/solar-system/milestones{/number}",
+2025-02-08T10:31:22.2030022Z       "mirror_url": null,
+2025-02-08T10:31:22.2030654Z       "name": "solar-system",
+2025-02-08T10:31:22.2031130Z       "node_id": "R_kgDON1aeLA",
+2025-02-08T10:31:22.2032053Z       "notifications_url": "https://api.github.com/repos/Piasecki-grid/solar-system/notifications{?since,all,participating}",
+2025-02-08T10:31:22.2033000Z       "open_issues": 0,
+2025-02-08T10:31:22.2033429Z       "open_issues_count": 0,
+2025-02-08T10:31:22.2033863Z       "owner": {
+2025-02-08T10:31:22.2034424Z         "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.2035131Z         "email": "kpiasecki@griddynamics.com",
+2025-02-08T10:31:22.2035846Z         "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.2036940Z         "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.2037853Z         "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.2038751Z         "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.2039432Z         "gravatar_id": "",
+2025-02-08T10:31:22.2039931Z         "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.2040636Z         "id": 192516429,
+2025-02-08T10:31:22.2041081Z         "login": "Piasecki-grid",
+2025-02-08T10:31:22.2041554Z         "name": "Piasecki-grid",
+2025-02-08T10:31:22.2042032Z         "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.2042686Z         "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.2043613Z         "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.2044471Z         "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.2045092Z         "site_admin": false,
+2025-02-08T10:31:22.2045765Z         "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.2046702Z         "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.2047426Z         "type": "User",
+2025-02-08T10:31:22.2047911Z         "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.2048486Z         "user_view_type": "public"
+2025-02-08T10:31:22.2048937Z       },
+2025-02-08T10:31:22.2049294Z       "private": false,
+2025-02-08T10:31:22.2049949Z       "pulls_url": "https://api.github.com/repos/Piasecki-grid/solar-system/pulls{/number}",
+2025-02-08T10:31:22.2050840Z       "pushed_at": 1739010673,
+2025-02-08T10:31:22.2051539Z       "releases_url": "https://api.github.com/repos/Piasecki-grid/solar-system/releases{/id}",
+2025-02-08T10:31:22.2052268Z       "size": 1733,
+2025-02-08T10:31:22.2052920Z       "ssh_url": "git@github.com:Piasecki-grid/solar-system.git",
+2025-02-08T10:31:22.2053522Z       "stargazers": 0,
+2025-02-08T10:31:22.2053945Z       "stargazers_count": 0,
+2025-02-08T10:31:22.2054645Z       "stargazers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/stargazers",
+2025-02-08T10:31:22.2055634Z       "statuses_url": "https://api.github.com/repos/Piasecki-grid/solar-system/statuses/{sha}",
+2025-02-08T10:31:22.2056648Z       "subscribers_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscribers",
+2025-02-08T10:31:22.2057677Z       "subscription_url": "https://api.github.com/repos/Piasecki-grid/solar-system/subscription",
+2025-02-08T10:31:22.2058546Z       "svn_url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.2059433Z       "tags_url": "https://api.github.com/repos/Piasecki-grid/solar-system/tags",
+2025-02-08T10:31:22.2060291Z       "teams_url": "https://api.github.com/repos/Piasecki-grid/solar-system/teams",
+2025-02-08T10:31:22.2061525Z       "topics": [],
+2025-02-08T10:31:22.2062187Z       "trees_url": "https://api.github.com/repos/Piasecki-grid/solar-system/git/trees{/sha}",
+2025-02-08T10:31:22.2062943Z       "updated_at": "2025-02-08T08:38:06Z",
+2025-02-08T10:31:22.2063537Z       "url": "https://github.com/Piasecki-grid/solar-system",
+2025-02-08T10:31:22.2064131Z       "visibility": "public",
+2025-02-08T10:31:22.2064577Z       "watchers": 0,
+2025-02-08T10:31:22.2064987Z       "watchers_count": 0,
+2025-02-08T10:31:22.2065449Z       "web_commit_signoff_required": false
+2025-02-08T10:31:22.2065944Z     },
+2025-02-08T10:31:22.2066298Z     "sender": {
+2025-02-08T10:31:22.2066884Z       "avatar_url": "https://avatars.githubusercontent.com/u/192516429?v=4",
+2025-02-08T10:31:22.2067740Z       "events_url": "https://api.github.com/users/Piasecki-grid/events{/privacy}",
+2025-02-08T10:31:22.2068588Z       "followers_url": "https://api.github.com/users/Piasecki-grid/followers",
+2025-02-08T10:31:22.2069483Z       "following_url": "https://api.github.com/users/Piasecki-grid/following{/other_user}",
+2025-02-08T10:31:22.2070491Z       "gists_url": "https://api.github.com/users/Piasecki-grid/gists{/gist_id}",
+2025-02-08T10:31:22.2071165Z       "gravatar_id": "",
+2025-02-08T10:31:22.2071652Z       "html_url": "https://github.com/Piasecki-grid",
+2025-02-08T10:31:22.2072194Z       "id": 192516429,
+2025-02-08T10:31:22.2072603Z       "login": "Piasecki-grid",
+2025-02-08T10:31:22.2073068Z       "node_id": "U_kgDOC3mRTQ",
+2025-02-08T10:31:22.2073816Z       "organizations_url": "https://api.github.com/users/Piasecki-grid/orgs",
+2025-02-08T10:31:22.2074717Z       "received_events_url": "https://api.github.com/users/Piasecki-grid/received_events",
+2025-02-08T10:31:22.2075575Z       "repos_url": "https://api.github.com/users/Piasecki-grid/repos",
+2025-02-08T10:31:22.2076195Z       "site_admin": false,
+2025-02-08T10:31:22.2076855Z       "starred_url": "https://api.github.com/users/Piasecki-grid/starred{/owner}{/repo}",
+2025-02-08T10:31:22.2077797Z       "subscriptions_url": "https://api.github.com/users/Piasecki-grid/subscriptions",
+2025-02-08T10:31:22.2078494Z       "type": "User",
+2025-02-08T10:31:22.2078971Z       "url": "https://api.github.com/users/Piasecki-grid",
+2025-02-08T10:31:22.2079540Z       "user_view_type": "public"
+2025-02-08T10:31:22.2079990Z     }
+2025-02-08T10:31:22.2080326Z   },
+2025-02-08T10:31:22.2080797Z   "server_url": "https://github.com",
+2025-02-08T10:31:22.2081320Z   "api_url": "https://api.github.com",
+2025-02-08T10:31:22.2081880Z   "graphql_url": "https://api.github.com/graphql",
+2025-02-08T10:31:22.2082422Z   "ref_name": "main",
+2025-02-08T10:31:22.2082836Z   "ref_protected": false,
+2025-02-08T10:31:22.2083256Z   "ref_type": "branch",
+2025-02-08T10:31:22.2083682Z   "secret_source": "Actions",
+2025-02-08T10:31:22.2084482Z   "workflow_ref": "Piasecki-grid/solar-system/.github/workflows/context-workflow.yml@refs/heads/main",
+2025-02-08T10:31:22.2085410Z   "workflow_sha": "b55d5471c61c93bbd284c34f018e40b393109ebc",
+2025-02-08T10:31:22.2086260Z   "workspace": "/home/runner/work/solar-system/solar-system",
+2025-02-08T10:31:22.2086859Z   "action": "__run"
+2025-02-08T10:31:22.2087230Z }
+2025-02-08T10:31:22.2135964Z ##[debug]Finishing: Dump GitHub context
+2025-02-08T10:31:22.2149425Z ##[debug]Evaluating: toJson(job)
+2025-02-08T10:31:22.2149982Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2150621Z ##[debug]..Evaluating job:
+2025-02-08T10:31:22.2151201Z ##[debug]..=> Object
+2025-02-08T10:31:22.2151951Z ##[debug]=> '{
+2025-02-08T10:31:22.2152345Z ##[debug]  "status": "success"
+2025-02-08T10:31:22.2152784Z ##[debug]}'
+2025-02-08T10:31:22.2153185Z ##[debug]Result: '{
+2025-02-08T10:31:22.2153593Z ##[debug]  "status": "success"
+2025-02-08T10:31:22.2154027Z ##[debug]}'
+2025-02-08T10:31:22.2154741Z ##[debug]Evaluating condition for step: 'Dump job context'
+2025-02-08T10:31:22.2156657Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2157331Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2158053Z ##[debug]=> true
+2025-02-08T10:31:22.2158668Z ##[debug]Result: true
+2025-02-08T10:31:22.2159547Z ##[debug]Starting: Dump job context
+2025-02-08T10:31:22.2171451Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2172614Z ##[debug]Loading env
+2025-02-08T10:31:22.2179642Z ##[group]Run echo "$JOB_CONTEXT"
+2025-02-08T10:31:22.2180135Z [36;1mecho "$JOB_CONTEXT"[0m
+2025-02-08T10:31:22.2209089Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2209563Z env:
+2025-02-08T10:31:22.2209957Z   JOB_CONTEXT: {
+  "status": "success"
+}
+2025-02-08T10:31:22.2210599Z ##[endgroup]
+2025-02-08T10:31:22.2239475Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/94212f8c-552c-4f5e-b4e7-3b978b4fb541.sh
+2025-02-08T10:31:22.2261733Z {
+2025-02-08T10:31:22.2262356Z   "status": "success"
+2025-02-08T10:31:22.2263068Z }
+2025-02-08T10:31:22.2267790Z ##[debug]Finishing: Dump job context
+2025-02-08T10:31:22.2277008Z ##[debug]Evaluating: toJson(steps)
+2025-02-08T10:31:22.2277578Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2278073Z ##[debug]..Evaluating steps:
+2025-02-08T10:31:22.2278554Z ##[debug]..=> Object
+2025-02-08T10:31:22.2279637Z ##[debug]=> '{}'
+2025-02-08T10:31:22.2280069Z ##[debug]Result: '{}'
+2025-02-08T10:31:22.2281040Z ##[debug]Evaluating condition for step: 'Dump steps context'
+2025-02-08T10:31:22.2282475Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2283148Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2283782Z ##[debug]=> true
+2025-02-08T10:31:22.2284393Z ##[debug]Result: true
+2025-02-08T10:31:22.2285137Z ##[debug]Starting: Dump steps context
+2025-02-08T10:31:22.2295162Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2296297Z ##[debug]Loading env
+2025-02-08T10:31:22.2302703Z ##[group]Run echo "$STEPS_CONTEXT"
+2025-02-08T10:31:22.2303204Z [36;1mecho "$STEPS_CONTEXT"[0m
+2025-02-08T10:31:22.2328475Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2328927Z env:
+2025-02-08T10:31:22.2329323Z   STEPS_CONTEXT: {}
+2025-02-08T10:31:22.2329722Z ##[endgroup]
+2025-02-08T10:31:22.2358093Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/72a7a885-f329-49e7-988c-0a93f128bc34.sh
+2025-02-08T10:31:22.2380880Z {}
+2025-02-08T10:31:22.2386247Z ##[debug]Finishing: Dump steps context
+2025-02-08T10:31:22.2397317Z ##[debug]Evaluating: toJson(runner)
+2025-02-08T10:31:22.2397958Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2398518Z ##[debug]..Evaluating runner:
+2025-02-08T10:31:22.2399096Z ##[debug]..=> Object
+2025-02-08T10:31:22.2400242Z ##[debug]=> '{
+2025-02-08T10:31:22.2400885Z ##[debug]  "debug": "1",
+2025-02-08T10:31:22.2401374Z ##[debug]  "os": "Linux",
+2025-02-08T10:31:22.2401865Z ##[debug]  "arch": "X64",
+2025-02-08T10:31:22.2402410Z ##[debug]  "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2403011Z ##[debug]  "environment": "github-hosted",
+2025-02-08T10:31:22.2403616Z ##[debug]  "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2404292Z ##[debug]  "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2404994Z ##[debug]  "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2405636Z ##[debug]}'
+2025-02-08T10:31:22.2406049Z ##[debug]Result: '{
+2025-02-08T10:31:22.2406549Z ##[debug]  "debug": "1",
+2025-02-08T10:31:22.2406986Z ##[debug]  "os": "Linux",
+2025-02-08T10:31:22.2407533Z ##[debug]  "arch": "X64",
+2025-02-08T10:31:22.2407976Z ##[debug]  "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2408492Z ##[debug]  "environment": "github-hosted",
+2025-02-08T10:31:22.2409154Z ##[debug]  "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2409717Z ##[debug]  "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2410307Z ##[debug]  "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2411071Z ##[debug]}'
+2025-02-08T10:31:22.2411729Z ##[debug]Evaluating condition for step: 'Dump runner context'
+2025-02-08T10:31:22.2413082Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2413737Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2414465Z ##[debug]=> true
+2025-02-08T10:31:22.2415308Z ##[debug]Result: true
+2025-02-08T10:31:22.2416061Z ##[debug]Starting: Dump runner context
+2025-02-08T10:31:22.2426242Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2427385Z ##[debug]Loading env
+2025-02-08T10:31:22.2433784Z ##[group]Run echo "$RUNNER_CONTEXT"
+2025-02-08T10:31:22.2434308Z [36;1mecho "$RUNNER_CONTEXT"[0m
+2025-02-08T10:31:22.2459641Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2460104Z env:
+2025-02-08T10:31:22.2461733Z   RUNNER_CONTEXT: {
+  "debug": "1",
+  "os": "Linux",
+  "arch": "X64",
+  "name": "GitHub Actions 11",
+  "environment": "github-hosted",
+  "tool_cache": "/opt/hostedtoolcache",
+  "temp": "/home/runner/work/_temp",
+  "workspace": "/home/runner/work/solar-system"
+}
+2025-02-08T10:31:22.2463184Z ##[endgroup]
+2025-02-08T10:31:22.2491523Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/63f89a03-e04d-49dc-9c6b-ce6004391cfe.sh
+2025-02-08T10:31:22.2510269Z {
+2025-02-08T10:31:22.2511017Z   "debug": "1",
+2025-02-08T10:31:22.2511480Z   "os": "Linux",
+2025-02-08T10:31:22.2512296Z   "arch": "X64",
+2025-02-08T10:31:22.2512974Z   "name": "GitHub Actions 11",
+2025-02-08T10:31:22.2513758Z   "environment": "github-hosted",
+2025-02-08T10:31:22.2514287Z   "tool_cache": "/opt/hostedtoolcache",
+2025-02-08T10:31:22.2514819Z   "temp": "/home/runner/work/_temp",
+2025-02-08T10:31:22.2515367Z   "workspace": "/home/runner/work/solar-system"
+2025-02-08T10:31:22.2515884Z }
+2025-02-08T10:31:22.2518722Z ##[debug]Finishing: Dump runner context
+2025-02-08T10:31:22.2527777Z ##[debug]Evaluating: toJson(strategy)
+2025-02-08T10:31:22.2528362Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2528849Z ##[debug]..Evaluating strategy:
+2025-02-08T10:31:22.2529332Z ##[debug]..=> Object
+2025-02-08T10:31:22.2530094Z ##[debug]=> '{
+2025-02-08T10:31:22.2530750Z ##[debug]  "fail-fast": true,
+2025-02-08T10:31:22.2531234Z ##[debug]  "job-index": 0,
+2025-02-08T10:31:22.2531683Z ##[debug]  "job-total": 1,
+2025-02-08T10:31:22.2532134Z ##[debug]  "max-parallel": 1
+2025-02-08T10:31:22.2532576Z ##[debug]}'
+2025-02-08T10:31:22.2532993Z ##[debug]Result: '{
+2025-02-08T10:31:22.2533400Z ##[debug]  "fail-fast": true,
+2025-02-08T10:31:22.2533859Z ##[debug]  "job-index": 0,
+2025-02-08T10:31:22.2534302Z ##[debug]  "job-total": 1,
+2025-02-08T10:31:22.2534744Z ##[debug]  "max-parallel": 1
+2025-02-08T10:31:22.2535177Z ##[debug]}'
+2025-02-08T10:31:22.2535838Z ##[debug]Evaluating condition for step: 'Dump strategy context'
+2025-02-08T10:31:22.2537194Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2537884Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2538525Z ##[debug]=> true
+2025-02-08T10:31:22.2539129Z ##[debug]Result: true
+2025-02-08T10:31:22.2539872Z ##[debug]Starting: Dump strategy context
+2025-02-08T10:31:22.2549818Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2551102Z ##[debug]Loading env
+2025-02-08T10:31:22.2557213Z ##[group]Run echo "$STRATEGY_CONTEXT"
+2025-02-08T10:31:22.2557755Z [36;1mecho "$STRATEGY_CONTEXT"[0m
+2025-02-08T10:31:22.2583171Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2583643Z env:
+2025-02-08T10:31:22.2584296Z   STRATEGY_CONTEXT: {
+  "fail-fast": true,
+  "job-index": 0,
+  "job-total": 1,
+  "max-parallel": 1
+}
+2025-02-08T10:31:22.2585053Z ##[endgroup]
+2025-02-08T10:31:22.2612878Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/87920a3f-4660-41fa-afa3-4fa1aeb62fc1.sh
+2025-02-08T10:31:22.2631769Z {
+2025-02-08T10:31:22.2632380Z   "fail-fast": true,
+2025-02-08T10:31:22.2632940Z   "job-index": 0,
+2025-02-08T10:31:22.2633775Z   "job-total": 1,
+2025-02-08T10:31:22.2634441Z   "max-parallel": 1
+2025-02-08T10:31:22.2634972Z }
+2025-02-08T10:31:22.2637898Z ##[debug]Finishing: Dump strategy context
+2025-02-08T10:31:22.2677218Z ##[debug]Starting: Complete job
+2025-02-08T10:31:22.2679692Z Uploading runner diagnostic logs
+2025-02-08T10:31:22.2690876Z ##[debug]Starting diagnostic file upload.
+2025-02-08T10:31:22.2691501Z ##[debug]Setting up diagnostic log folders.
+2025-02-08T10:31:22.2693941Z ##[debug]Creating diagnostic log files folder.
+2025-02-08T10:31:22.2702960Z ##[debug]Copying 1 worker diagnostic logs.
+2025-02-08T10:31:22.2712962Z ##[debug]Copying 1 runner diagnostic logs.
+2025-02-08T10:31:22.2714651Z ##[debug]Zipping diagnostic files.
+2025-02-08T10:31:22.2778019Z ##[debug]Uploading diagnostic metadata file.
+2025-02-08T10:31:22.2804703Z ##[debug]Diagnostic file upload complete.
+2025-02-08T10:31:22.2805604Z Completed runner diagnostic log upload
+2025-02-08T10:31:22.2806140Z Cleaning up orphan processes
+2025-02-08T10:31:22.3108974Z ##[debug]Finishing: Complete job
+2025-02-08T10:31:22.3138982Z ##[debug]Finishing: dump_contexts_to_log

@@ -1,0 +1,51 @@
+2025-02-08T10:31:21.9616194Z ##[debug]Starting: Set up job
+2025-02-08T10:31:21.9617363Z Current runner version: '2.322.0'
+2025-02-08T10:31:21.9638972Z ##[group]Operating System
+2025-02-08T10:31:21.9639719Z Ubuntu
+2025-02-08T10:31:21.9640204Z 24.04.1
+2025-02-08T10:31:21.9641143Z LTS
+2025-02-08T10:31:21.9641630Z ##[endgroup]
+2025-02-08T10:31:21.9642147Z ##[group]Runner Image
+2025-02-08T10:31:21.9642849Z Image: ubuntu-24.04
+2025-02-08T10:31:21.9643385Z Version: 20250202.1.0
+2025-02-08T10:31:21.9644456Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250202.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-08T10:31:21.9645886Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.1
+2025-02-08T10:31:21.9646758Z ##[endgroup]
+2025-02-08T10:31:21.9647350Z ##[group]Runner Image Provisioner
+2025-02-08T10:31:21.9648004Z 2.0.422.1
+2025-02-08T10:31:21.9648735Z ##[endgroup]
+2025-02-08T10:31:21.9651174Z ##[group]GITHUB_TOKEN Permissions
+2025-02-08T10:31:21.9653054Z Actions: write
+2025-02-08T10:31:21.9653889Z Attestations: write
+2025-02-08T10:31:21.9654406Z Checks: write
+2025-02-08T10:31:21.9654990Z Contents: write
+2025-02-08T10:31:21.9655523Z Deployments: write
+2025-02-08T10:31:21.9656063Z Discussions: write
+2025-02-08T10:31:21.9656661Z Issues: write
+2025-02-08T10:31:21.9657180Z Metadata: read
+2025-02-08T10:31:21.9657663Z Packages: write
+2025-02-08T10:31:21.9658272Z Pages: write
+2025-02-08T10:31:21.9658797Z PullRequests: write
+2025-02-08T10:31:21.9659411Z RepositoryProjects: write
+2025-02-08T10:31:21.9660013Z SecurityEvents: write
+2025-02-08T10:31:21.9660739Z Statuses: write
+2025-02-08T10:31:21.9661441Z ##[endgroup]
+2025-02-08T10:31:21.9663461Z Secret source: Actions
+2025-02-08T10:31:21.9664364Z ##[debug]Primary repository: Piasecki-grid/solar-system
+2025-02-08T10:31:21.9665216Z Prepare workflow directory
+2025-02-08T10:31:21.9727154Z ##[debug]Creating pipeline directory: '/home/runner/work/solar-system'
+2025-02-08T10:31:21.9730731Z ##[debug]Creating workspace directory: '/home/runner/work/solar-system/solar-system'
+2025-02-08T10:31:21.9732438Z ##[debug]Update context data
+2025-02-08T10:31:21.9736045Z ##[debug]Evaluating job-level environment variables
+2025-02-08T10:31:21.9949752Z ##[debug]Evaluating job container
+2025-02-08T10:31:21.9953057Z ##[debug]Evaluating job service containers
+2025-02-08T10:31:21.9955972Z ##[debug]Evaluating job defaults
+2025-02-08T10:31:21.9980335Z Prepare all required actions
+2025-02-08T10:31:22.0069539Z ##[debug]Set step '__run' display name to: 'Dump GitHub context'
+2025-02-08T10:31:22.0073144Z ##[debug]Set step '__run_2' display name to: 'Dump job context'
+2025-02-08T10:31:22.0075230Z ##[debug]Set step '__run_3' display name to: 'Dump steps context'
+2025-02-08T10:31:22.0077218Z ##[debug]Set step '__run_4' display name to: 'Dump runner context'
+2025-02-08T10:31:22.0079177Z ##[debug]Set step '__run_5' display name to: 'Dump strategy context'
+2025-02-08T10:31:22.0080008Z Complete job name: dump_contexts_to_log
+2025-02-08T10:31:22.0109189Z ##[debug]Collect running processes for tracking orphan processes.
+2025-02-08T10:31:22.0468696Z ##[debug]Finishing: Set up job

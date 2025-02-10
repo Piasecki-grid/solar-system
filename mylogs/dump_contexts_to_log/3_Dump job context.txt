@@ -1,0 +1,31 @@
+2025-02-08T10:31:22.2149410Z ##[debug]Evaluating: toJson(job)
+2025-02-08T10:31:22.2149978Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2150617Z ##[debug]..Evaluating job:
+2025-02-08T10:31:22.2151197Z ##[debug]..=> Object
+2025-02-08T10:31:22.2151946Z ##[debug]=> '{
+2025-02-08T10:31:22.2152342Z ##[debug]  "status": "success"
+2025-02-08T10:31:22.2152781Z ##[debug]}'
+2025-02-08T10:31:22.2153181Z ##[debug]Result: '{
+2025-02-08T10:31:22.2153590Z ##[debug]  "status": "success"
+2025-02-08T10:31:22.2154024Z ##[debug]}'
+2025-02-08T10:31:22.2154738Z ##[debug]Evaluating condition for step: 'Dump job context'
+2025-02-08T10:31:22.2156648Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2157327Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2158050Z ##[debug]=> true
+2025-02-08T10:31:22.2158664Z ##[debug]Result: true
+2025-02-08T10:31:22.2159543Z ##[debug]Starting: Dump job context
+2025-02-08T10:31:22.2171434Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2172607Z ##[debug]Loading env
+2025-02-08T10:31:22.2179603Z ##[group]Run echo "$JOB_CONTEXT"
+2025-02-08T10:31:22.2180133Z [36;1mecho "$JOB_CONTEXT"[0m
+2025-02-08T10:31:22.2209077Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2209560Z env:
+2025-02-08T10:31:22.2209943Z   JOB_CONTEXT: {
+  "status": "success"
+}
+2025-02-08T10:31:22.2210595Z ##[endgroup]
+2025-02-08T10:31:22.2239457Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/94212f8c-552c-4f5e-b4e7-3b978b4fb541.sh
+2025-02-08T10:31:22.2261708Z {
+2025-02-08T10:31:22.2262347Z   "status": "success"
+2025-02-08T10:31:22.2263058Z }
+2025-02-08T10:31:22.2267779Z ##[debug]Finishing: Dump job context

@@ -1,0 +1,8 @@
+2025-02-08T10:31:16.1938840Z ##[section]Starting: Prepare job dump_contexts_to_log
+2025-02-08T10:31:16.1941524Z Evaluating strategy
+2025-02-08T10:31:16.1947279Z Creating job '__default'
+2025-02-08T10:31:16.1949890Z Evaluating timeout
+2025-02-08T10:31:16.1949952Z Evaluating cancel timeout
+2025-02-08T10:31:16.1949991Z Evaluating continue on error
+2025-02-08T10:31:16.1950029Z Evaluating target
+2025-02-08T10:31:16.1951959Z ##[section]Finishing: Prepare job dump_contexts_to_log

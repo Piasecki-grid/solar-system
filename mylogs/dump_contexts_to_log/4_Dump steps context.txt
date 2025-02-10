@@ -1,0 +1,23 @@
+2025-02-08T10:31:22.2276994Z ##[debug]Evaluating: toJson(steps)
+2025-02-08T10:31:22.2277574Z ##[debug]Evaluating toJson:
+2025-02-08T10:31:22.2278070Z ##[debug]..Evaluating steps:
+2025-02-08T10:31:22.2278550Z ##[debug]..=> Object
+2025-02-08T10:31:22.2279629Z ##[debug]=> '{}'
+2025-02-08T10:31:22.2280059Z ##[debug]Result: '{}'
+2025-02-08T10:31:22.2281033Z ##[debug]Evaluating condition for step: 'Dump steps context'
+2025-02-08T10:31:22.2282468Z ##[debug]Evaluating: success()
+2025-02-08T10:31:22.2283145Z ##[debug]Evaluating success:
+2025-02-08T10:31:22.2283779Z ##[debug]=> true
+2025-02-08T10:31:22.2284382Z ##[debug]Result: true
+2025-02-08T10:31:22.2285134Z ##[debug]Starting: Dump steps context
+2025-02-08T10:31:22.2295148Z ##[debug]Loading inputs
+2025-02-08T10:31:22.2296291Z ##[debug]Loading env
+2025-02-08T10:31:22.2302696Z ##[group]Run echo "$STEPS_CONTEXT"
+2025-02-08T10:31:22.2303201Z [36;1mecho "$STEPS_CONTEXT"[0m
+2025-02-08T10:31:22.2328466Z shell: /usr/bin/bash -e {0}
+2025-02-08T10:31:22.2328923Z env:
+2025-02-08T10:31:22.2329294Z   STEPS_CONTEXT: {}
+2025-02-08T10:31:22.2329719Z ##[endgroup]
+2025-02-08T10:31:22.2358070Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/72a7a885-f329-49e7-988c-0a93f128bc34.sh
+2025-02-08T10:31:22.2380857Z {}
+2025-02-08T10:31:22.2386235Z ##[debug]Finishing: Dump steps context
