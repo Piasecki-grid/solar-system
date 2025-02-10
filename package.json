@@ -1,6 +1,10 @@
 {
   "name": "@Piasecki-grid/solar-system",
   "version": "6.7.6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Piasecki-grid/solar-system.git"
+  },
   "author": "Siddharth Barahalikar <barahalikar.siddharth@gmail.com>",
   "homepage": "https://www.linkedin.com/in/barahalikar-siddharth/",
   "license": "MIT",
