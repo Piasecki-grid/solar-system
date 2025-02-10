@@ -99,6 +99,7 @@ jobs:
           push: false
           tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/solar-system:${{ github.sha }}
+            ${{ github.repository_owner }}/solar-system:${{ github.sha }}
           
       - name: docker push to dockerhub
         uses: docker/build-push-action@v6
@@ -112,6 +113,18 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}
-
-
-
+  github-packages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to GitHub Packages
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
