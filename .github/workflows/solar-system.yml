@@ -144,7 +144,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: install kubectl
-        uses: azure/steup-kubectl@v4
+        uses: azure/setup-kubectl@v4
         with:
           version: 'v1.26.0'
       - uses: azure/k8s-set-context@v4
