@@ -147,6 +147,10 @@ jobs:
         uses: azure/steup-kubectl@v4
         with:
           version: 'v1.26.0'
+      - uses: azure/k8s-set-context@v4
+        with:
+           method: kubeconfig
+           kubeconfig: ${{ secrets.KUBECONFIG }} 
       - name: checking if k8s works
         run: |
           echo '-------------'
