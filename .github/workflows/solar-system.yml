@@ -74,6 +74,7 @@ jobs:
           path: coverage/
   docker:
     runs-on: ubuntu-latest
+    continue-on-error: true
     permissions:
       packages: write
     steps:
