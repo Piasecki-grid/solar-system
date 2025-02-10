@@ -17,6 +17,15 @@ env:
 jobs:
   unit-testing:
     runs-on: ${{ matrix.operating_system }} 
+    services:
+      mongo:
+        image: siddharth67/mongo-db:non-prod
+        ports:
+          - 27016:27016
+    env:
+      MONGO_URI: 'mongodb://localhost:27016/superData'
+      MONGO_USERNAME: non-prod-user
+      MONGO_PASSWORD: non-prod-password 
     strategy:
       matrix:
         node_version: [18]
@@ -52,17 +61,30 @@ jobs:
           path: test-results.xml
   test-coverage:
     runs-on: ubuntu-latest
+    container:
+      image: node:18
+    services:
+      mongo:
+        image: siddharth67/mongo-db:non-prod
+        ports:
+          - 27016:27016
+        options:
+          --name mongo
+    env:
+      MONGO_URI: 'mongodb://mongo:27016/superData'
+      MONGO_USERNAME: non-prod-user
+      MONGO_PASSWORD: non-prod-password 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      - name: Install npm
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node_versions }}
-          cache: 'npm'
+        #- name: Install npm
+        #uses: actions/setup-node@v4
+        #with:
+        #  node-version: ${{ matrix.node_versions }}
+        #  cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install 
 
       - name: Coverage
         run: npm run coverage
@@ -73,6 +95,7 @@ jobs:
           name: my-test-coverage-${{ strategy.job-index }}
           path: coverage/
   docker:
+    needs: [test-coverage, unit-testing]
     runs-on: ubuntu-latest
     continue-on-error: true
     permissions:
@@ -113,19 +136,4 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}
-  github-packages:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v4
-      # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm install 
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
