@@ -136,4 +136,19 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}
-  
+  dev-deploy:
+    needs: [docker]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: install kubectl
+        uses: azure/steup-kubectl@v4
+        with:
+          version: 'v1.26.0'
+      - name: checking if k8s works
+        run: |
+          echo '-------------'
+          kubectl get pods
+          echo '-------------'
