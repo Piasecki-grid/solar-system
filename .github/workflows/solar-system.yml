@@ -97,21 +97,21 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tag: |
+          tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/solar-system:${{ github.sha }}
           
       - name: docker push to dockerhub
         uses: docker/build-push-action@v6
         with:
           push: true
-          tag: ${{ vars.DOCKERHUB_USERNAME }}/solar-system:${{ github.sha }}
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/solar-system:${{ github.sha }}
 
       - name: docker push to ghcr
         continue-on-error: true
         uses: docker/build-push-action@v6
         with:
           push: true
-          tag: ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}
+          tags: ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}
 
 
 
