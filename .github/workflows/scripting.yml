@@ -10,10 +10,10 @@ jobs:
       - name: checking
         env:
           AWS_SECRET_KEY: "siema"
-          run: |
-            issue_title="${{ github.issue.title }}"
-            if [[ "${issue_title}" == *"bug"* ]]; then
-              echo "ABCD"
-            else
-              echo "EFG"
-            fi
+        run: |
+          issue_title="${{ github.issue.title }}"
+          if [[ "${issue_title}" == *"bug"* ]]; then
+            echo "ABCD"
+          else
+            echo "EFG"
+          fi
