@@ -2,12 +2,12 @@ name: hacking-purposes
 on:
 	issues:
 		types:
-		- opened
+		  - opened
 jobs:
 	test:
 		runs-on: ubuntu-latest
 		steps:
-			- name:
+			- name: checking
 			  env:
 				  AWS_SECRET_KEY: "siema"
 			  run: |
