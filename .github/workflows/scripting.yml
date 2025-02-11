@@ -1,8 +1,10 @@
 name: hacking-purposes
 on:
+  workflow_dispatch:
   issues:
     types:
       - opened
+      - closed
 jobs:
   test:
     runs-on: ubuntu-latest
