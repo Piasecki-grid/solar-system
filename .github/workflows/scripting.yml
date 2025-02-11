@@ -1,19 +1,19 @@
 name: hacking-purposes
 on:
-	issues:
-		types:
-		  - opened
+  issues:
+    types:
+      - opened
 jobs:
-	test:
-		runs-on: ubuntu-latest
-		steps:
-			- name: checking
-			  env:
-				  AWS_SECRET_KEY: "siema"
-			  run: |
-          issue_title="${{ github.issue.title }}"
-          if [[ "${issue_title}" == *"bug"* ]]; then
-            echo "ABCD"
-          else
-            echo "EFG"
-          fi
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking
+        env:
+          AWS_SECRET_KEY: "siema"
+          run: |
+            issue_title="${{ github.issue.title }}"
+            if [[ "${issue_title}" == *"bug"* ]]; then
+              echo "ABCD"
+            else
+              echo "EFG"
+            fi
