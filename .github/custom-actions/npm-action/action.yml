@@ -1,0 +1,17 @@
+name: my-custom-action
+description: "random"
+inputs:
+  path-of-folder:
+    description: 'the path to the cache'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: cache npm dependencies
+      uses: actions/cache@v3
+      with:
+        path: ${{ inputs.path-of-folder }}
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }}
+    - name: Install dependencies
+      run: npm install
+      shell: bash
