@@ -98,12 +98,20 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: login to ghcr
+      - name: login to nexus repository onec2
         uses: docker/login-action@v3
         with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: ${{ secrets.NEXUS_URL }}
+          username: ${{ secrets.NEXUS_USERNAME }}
+          password: ${{ secrets.NEXUS_PASSWORD }}
+
+      - name: Build Docker image for nexus
+        run: |
+          docker build -t ${{ secrets.NEXUS_URL}}/my-app:latest .
+
+      - name: Push Docker image to Nexus
+        run: |
+          docker push ${{ secrets.NEXUS_HOST }}/my-app:latest
 
       - name: docker build
         uses: docker/build-push-action@v6
